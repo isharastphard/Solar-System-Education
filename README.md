@@ -14,7 +14,7 @@ Clone the repo and go into the client folder:
 
 `git clone git@github.com:isharastphard/Solar-System-Education.git`
 
-`cd Solar-System-Education/client`
+`cd C:\Users\Ishar\source\repos\Solar-System-Education`
 
 The simply run `yarn` to install dependencies.
 

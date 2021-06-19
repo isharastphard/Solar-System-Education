@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/site.css" />
+
+</head>
+<body>
+    {% extends "layout.html" %}
+    {% block content %}
+    <span class="message">{{ message }}</span>{{ content }}
+    {% endblock %}
+    <div><a href="about">About</a></div>
+</body>
+</html>

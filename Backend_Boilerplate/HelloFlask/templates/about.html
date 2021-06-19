@@ -1,0 +1,13 @@
+﻿<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/site.css" />
+</head>
+<body>
+    <!---<div><a href="home">Home</a></div>-->  <!--this line to the left adds a home button above navbar-->
+    {% extends "layout.html" %}
+    {% block content %}
+    {{ content }}
+    {% endblock %}
+</body>
+</html>

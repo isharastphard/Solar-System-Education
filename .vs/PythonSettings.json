@@ -1,0 +1,4 @@
+{
+  "TestFramework": "Pytest",
+  "Interpreter": "MSBuild|env|C:\\Users\\Ishar\\source\\repos\\Solar-System-Education\\Backend_Boilerplate\\Backend_Boilerplate.pyproj"
+}
