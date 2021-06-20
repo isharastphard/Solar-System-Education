@@ -302,3 +302,7 @@ sketch
 
 # and uncomment the following lines
 .pnp.*
+
+.vs/
+
+venv/
