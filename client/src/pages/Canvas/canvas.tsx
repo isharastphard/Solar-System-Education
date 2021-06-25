@@ -24,7 +24,7 @@ const Canvas =({width, height}: CanvasProps) => {
     //context.fillRect (0,-12,50,24);//shadow
     const Earth = document.createElement('img')
     Earth.src = earth;
-    context.drawImage(Earth, 0,-12, 50, 54)
+    context.drawImage(Earth, 0,-12, 50, 50)
     context.restore();          
     context.beginPath()
 
