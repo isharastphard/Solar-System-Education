@@ -1,14 +1,14 @@
-import React from 'react';
-import Canvas from '../Canvas/canvas'
+import React from "react";
+import Canvas from "../Canvas/canvas";
 
 const Home: React.FunctionComponent = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <Canvas/>
-      </header>
+      <body>
+        <Canvas width={window.innerWidth} height={window.innerHeight}/>
+      </body>
     </div>
   );
-}
+};
 
 export default Home;
