@@ -1,4 +1,6 @@
 import React, { useCallback, useEffect, useRef } from "react";
+import sun from "./sun.png"
+import mercury from "./mercury.png"
 import earth from "./earth.png"
 interface CanvasProps{
   width: number;
@@ -17,19 +19,38 @@ const Canvas =({width, height}: CanvasProps) => {
     context.save();
     context.translate(width/2,height/2)
 
-    //Earth
+    //PLANETS
+
     var time = new Date();
     context.rotate(((2*Math.PI)/60)*time.getSeconds()+((2*Math.PI)/60000)*time.getMilliseconds());
-    context.translate(105,0);
-    //context.fillRect (0,-12,50,24);//shadow
+    context.translate(30,0);
+  //  context.fillRect (0,-12,50,24);//shadow
+    //Mercury
+    const Mercury = document.createElement('img')
+    Mercury.src = mercury;
+    context.drawImage(Mercury, -12, -80, 20, 20)
+
+    //Earth
+    context.translate(60,0);
     const Earth = document.createElement('img')
     Earth.src = earth;
-    context.drawImage(Earth, 0,-12, 50, 50)
+    context.drawImage(Earth, 0,-12, 30, 30)
     context.restore();          
     context.beginPath()
 
-    context.arc(width/2,height/2,105,0,Math.PI*2,false);//orbit of earth
+    //Sun
+    const Sun = document.createElement('img')
+    Sun.src = sun;
+    context.drawImage(Sun, (width-80)/2, (height-80)/2, 80, 80)
+
+    //ORBITS
+    //Mercury orbit
+    context.arc(width/2, height/2, 75,0,Math.PI*2,false);
     context.stroke();
+    //Earth orbit
+    context.arc(width/2,height/2,105,0,Math.PI*2,false);
+    context.stroke();
+
 
     window.requestAnimationFrame(() => draw(context));},[width,height]) 
 
