@@ -1,7 +1,10 @@
 import React, { useCallback, useEffect, useRef } from "react";
 import sun from "./sun.png"
-import mercury from "./mercury.png"
+import mercury from "./mercury1.png"
+import venus from "./Venus.png"
 import earth from "./earth.png"
+import mars from "./Mars.png"
+
 interface CanvasProps{
   width: number;
   height: number;
@@ -10,11 +13,22 @@ interface CanvasProps{
 const Canvas =({width, height}: CanvasProps) => {
   let canvasRef = useRef<HTMLCanvasElement | null>(null);
 
+  function makeOrbit(context:any, x:number){
+    context.beginPath();
+    context.arc(width/2,height/2,x,0,Math.PI*2,false);
+    context.stroke();
+    context.closePath();
+  }
+  function makeBody(context: any, pic:any, x:number, y:number, pwidth:number, pheight:number) {
+    const Body = document.createElement('img');
+    Body.src = pic;
+    context.drawImage(Body, x, y, pwidth, pheight);
+  }
+
   const draw = useCallback((context:any) =>{
     context.globalCompositeOperation ='destination-over';
     context.clearRect(0,0,width,height); // clear canvas
-
-    context.fillStyle='rgba(0,0,0,0.4)';
+    //context.fillStyle='rgba(0,0,0,0.4)';
     context.strokeStyle = 'rgba(0,153,255,0.4)';
     context.save();
     context.translate(width/2,height/2)
@@ -23,20 +37,19 @@ const Canvas =({width, height}: CanvasProps) => {
 
     var time = new Date();
     context.rotate(((2*Math.PI)/60)*time.getSeconds()+((2*Math.PI)/60000)*time.getMilliseconds());
-    context.translate(30,0);
-  //  context.fillRect (0,-12,50,24);//shadow
-    //Mercury
-    const Mercury = document.createElement('img')
-    Mercury.src = mercury;
-    context.drawImage(Mercury, -12, -80, 20, 20)
+    context.translate(90,0);
 
+    //Mercury
+    //  context.fillRect (0,-12,50,24);//shadow
+    makeBody(context, mercury, -65, -40, 20, 20);
+    //Venus
+    makeBody(context, venus, -143, -78, 30, 30);
     //Earth
-    context.translate(60,0);
-    const Earth = document.createElement('img')
-    Earth.src = earth;
-    context.drawImage(Earth, 0,-12, 30, 30)
-    context.restore();          
-    context.beginPath()
+    makeBody(context, earth, -100, 83, 40, 40);
+    //Mars - Might need another PNG without a shadow
+    makeBody(context, mars, 32, -12, 25, 25)
+    
+    context.restore();
 
     //Sun
     const Sun = document.createElement('img')
@@ -45,12 +58,13 @@ const Canvas =({width, height}: CanvasProps) => {
 
     //ORBITS
     //Mercury orbit
-    context.arc(width/2, height/2, 75,0,Math.PI*2,false);
-    context.stroke();
+    makeOrbit(context, 45);
+    //Venus orbit
+    makeOrbit(context, 75);
     //Earth orbit
-    context.arc(width/2,height/2,105,0,Math.PI*2,false);
-    context.stroke();
-
+    makeOrbit(context, 105);
+    //Mars orbit
+    makeOrbit(context, 135)
 
     window.requestAnimationFrame(() => draw(context));},[width,height]) 
 
@@ -72,6 +86,5 @@ const Canvas =({width, height}: CanvasProps) => {
 Canvas.defaultProps = {
   width: window.innerWidth,
   height:window.innerHeight,
-  zIndex:2
 };
 export default Canvas;
