@@ -102,6 +102,5 @@ const Canvas = ({ width, height }: CanvasProps) => {
 Canvas.defaultProps = {
   width: window.innerWidth,
   height: window.innerHeight,
-  //zindex:1
 };
 export default Canvas;
