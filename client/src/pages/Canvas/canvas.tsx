@@ -45,11 +45,12 @@ const Canvas =({width, height}: CanvasProps) => {
   },[draw]);
   
 
-  return <canvas ref = {canvasRef} height={height} width ={width}/>
+  return <canvas ref = {canvasRef} height={height} width ={width} style = {{position:'absolute', zIndex:50}}/>
 };
 
 Canvas.defaultProps = {
   width: window.innerWidth,
-  height:window.innerHeight
+  height:window.innerHeight,
+  zIndex:2
 };
 export default Canvas;
