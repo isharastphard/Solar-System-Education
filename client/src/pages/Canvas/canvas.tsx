@@ -75,8 +75,10 @@ const Canvas =({width, height}: CanvasProps) => {
     const Belt = document.createElement('img');
     Belt.src = belt;
     let x:number = 400;
+    let y:number = 0; //trying to find a way to change animation speed
+    let z:number = y/10;
     context.translate(width/2, height/2);
-    context.rotate(((2*Math.PI)/60)*time.getSeconds()+((2*Math.PI)/60000)*time.getMilliseconds()); 
+    context.rotate(((2*Math.PI)/60)*(time.getSeconds()-y)+((2*Math.PI)/60000)*(time.getMilliseconds()-y)); 
     context.drawImage(Belt, (width-x)/2-(width)/2, (height-x)/2-(height)/2, x, x);
     context.translate(-(width)/2, -(height)/2);
 
