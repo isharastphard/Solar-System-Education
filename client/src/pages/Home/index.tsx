@@ -1,6 +1,6 @@
 import React from "react";
-import Canvas from "../Canvas/canvas";
-import Background from "../Canvas/background";
+import Canvas from "../../components/Canvas/Planets";
+import Background from "../../components/Canvas/Stars";
 
 const Home: React.FunctionComponent = () => {
   return (

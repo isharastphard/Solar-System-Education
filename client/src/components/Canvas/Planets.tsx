@@ -1,14 +1,14 @@
 import React, { useCallback, useEffect, useRef } from "react";
-import sun from "./sun.png"
-import mercury from "./mercury1.png"
-import venus from "./Venus.png"
-import earth from "./earth.png"
-import mars from "./Mars.png"
-import belt from "./asteroid_belt_grey.png"
-import jupiter from "./Jupiter_rotate.png"
-import saturn from "./saturn.png"
-import uranus from "./uranus.png"
-import neptune from "./Neptune.png"
+import sun from "../../images/sun.png"
+import mercury from "../../images/mercury1.png"
+import venus from "../../images/Venus.png"
+import earth from "../../images/earth.png"
+import mars from "../../images/Mars.png"
+import belt from "../../images/asteroid_belt_grey.png"
+import jupiter from "../../images/Jupiter_rotate.png"
+import saturn from "../../images/saturn.png"
+import uranus from "../../images/uranus.png"
+import neptune from "../../images/Neptune.png"
 
 interface CanvasProps{
   width: number;
