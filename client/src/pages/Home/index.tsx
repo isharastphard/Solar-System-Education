@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from '../../logo.svg';
-import '../../App.css';
+import React from "react";
+import Canvas from "../../components/Canvas/Planets";
+import Background from "../../components/Canvas/Stars";
 
 const Home: React.FunctionComponent = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Coming Soon. Ad Astra.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body>
+        <Background width={window.innerWidth} height={window.innerHeight}/>
+        <Canvas width={window.innerWidth} height={window.innerHeight}/>
+      </body>
     </div>
   );
-}
+};
 
 export default Home;
