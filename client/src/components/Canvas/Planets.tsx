@@ -67,9 +67,7 @@ const Canvas =({width, height}: CanvasProps) => {
 
     context.save();
     //Sun
-    const Sun = document.createElement('img')
-    Sun.src = sun;
-    context.drawImage(Sun, (width-80)/2, (height-80)/2, 80, 80);
+    makeBody(context, sun, (width-80)/2, (height-80)/2, 80, 80);
 
     //asteroid belt
     const Belt = document.createElement('img');
@@ -78,7 +76,7 @@ const Canvas =({width, height}: CanvasProps) => {
     let y:number = 0; //trying to find a way to change animation speed
     let z:number = y/10;
     context.translate(width/2, height/2);
-    context.rotate(((2*Math.PI)/60)*(time.getSeconds()-y)+((2*Math.PI)/60000)*(time.getMilliseconds()-y)); 
+    context.rotate(((2*Math.PI)/60)*(time.getSeconds()-z)+((2*Math.PI)/60000)*(time.getMilliseconds()-y)); 
     context.drawImage(Belt, (width-x)/2-(width)/2, (height-x)/2-(height)/2, x, x);
     context.translate(-(width)/2, -(height)/2);
 
