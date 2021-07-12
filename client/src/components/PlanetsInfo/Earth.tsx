@@ -2,7 +2,7 @@ import React from "react";
 
 function Earth (){
     return(
-        <div> This is Earths Info</div>
+        <div style={{content:'center'}}> This is Earths Info</div>
     )
 }
 

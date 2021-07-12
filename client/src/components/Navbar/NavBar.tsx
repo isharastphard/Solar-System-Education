@@ -17,24 +17,44 @@ function NavBar() {
   );
   const [showModal, setShowModal] = useState(false);
   const [dropDown, SetDropDown] = useState<HTMLElement | null>(null);
+  const [planetDropDown, setPlanetDropDown] = useState<HTMLElement | null>(null);
   return (
-    <AppBar className="nav-container"  style={{ background: '#2E3B55' }}>
+    <AppBar   style={{ background: '#2E3B55' }}>
       <Toolbar>
         <Typography variant="h4" noWrap>
-          Solar System
+          <div className='title'>
+          Solar System</div>
         </Typography>
-        <Typography
+        <Typography 
           variant="h6"
           noWrap
-          onClick={() => {
+          onClick={(e) => {
+            setPlanetDropDown(e.currentTarget);
+          }}>
+          <div className='planets'>
+          Planets 
+          </div>
+          </Typography>
+          <Menu  
+          anchorEl={planetDropDown}
+          id="planets-menu"
+          keepMounted
+          open={Boolean(planetDropDown)}
+          onClose = {() => setPlanetDropDown(null)}
+          >
+            <MenuItem>Jupiter</MenuItem>
+            <MenuItem onClick={() => {
             setModalContent(<Earth />);
             setShowModal(true);
-          }}
-        ><div className='planets'>
-          Earth
-          </div>
-        </Typography>
-
+            }}>Earth </MenuItem>
+           <MenuItem>Mars</MenuItem>
+           <MenuItem>Neptune</MenuItem>
+           <MenuItem>Venus </MenuItem>
+           <MenuItem>Mercury </MenuItem>
+           <MenuItem>Saturn </MenuItem>
+           <MenuItem>Uranus </MenuItem>
+          
+          </Menu>
         <Typography
           variant="h6"
           noWrap
@@ -48,7 +68,7 @@ function NavBar() {
         </Typography>
         <Menu
           anchorEl={dropDown}
-          id="simple-menu"
+          id="quiz-menu"
           keepMounted
           open={Boolean(dropDown)}
           onClose = {() => SetDropDown(null)}
@@ -70,7 +90,7 @@ function NavBar() {
       </Toolbar>
       <Modal open={showModal}>
         <div className="modal-container">{modalContent}
-                <Button onClick={()=> setShowModal(false)}>X</Button>
+                <Button className="closeModal" onClick={()=> setShowModal(false)}>x</Button>
         </div>
       </Modal>
     </AppBar>

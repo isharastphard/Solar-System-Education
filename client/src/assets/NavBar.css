@@ -1,15 +1,17 @@
-.nav-container{
-    color: #205072;
-    background-color: gray;
+.title{
+    padding-right: 70%;
+    font-family: monospace;
 }
-
 .planets{
-    padding-left: 70em;
+    padding-left: 2em;
+    font-family: monospace;
 }
 
 .quiz{
     padding-left: 2em;
+    font-family: monospace;
 }
 .compare{
     padding-left: 2em;
+    font-family: monospace;
 }
