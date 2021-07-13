@@ -43,38 +43,40 @@ const Canvas =({width, height}: CanvasProps) => {
     var time = new Date();
     context.rotate(((2*Math.PI)/60)*time.getSeconds()+((2*Math.PI)/60000)*time.getMilliseconds());
     context.translate(90,0);
+    context.scale(.85,.85);
 
 
     //Mercury
     //context.fillRect (-100,83,40,40);//shadow
-    makeBody(context, mercury, -65, -40, 20, 20);
+    makeBody(context, mercury, -85, -40, 20, 20);
     //Venus
-    makeBody(context, venus, -143, -78, 30, 30);
+    makeBody(context, venus, -125, -90, 30, 30);
     //Earth
     makeBody(context, earth, -100, 83, 35, 35);
     //Mars - Might need another PNG without a shadow
-    makeBody(context, mars, 32, -12, 25, 25);
+    makeBody(context, mars, 18, -12, 25, 25);
     //Jupiter
-    makeBody(context, jupiter, -325, 30, 80, 80);
+    makeBody(context, jupiter, -335, 30, 80, 80);
     //Saturn
-    makeBody(context, saturn, -330, -150, 60, 60);
+    makeBody(context, saturn, -345, -150, 60, 60);
     //Uranus
-    makeBody(context, uranus, -220, 245, 33, 33);
+    makeBody(context, uranus, -220, 250, 33, 33);
     //Neptune
-    makeBody(context, neptune, 50, -300, 35, 35);
+    makeBody(context, neptune, 40, -300, 35, 35);
     
     context.restore();
-
     context.save();
+    //context.scale(.9,.9);
     //Sun
     const Sun = document.createElement('img')
     Sun.src = sun;
-    context.drawImage(Sun, (width-80)/2, (height-80)/2, 80, 80);
+    let sunDimension:number = 80 * .85;
+    context.drawImage(Sun, (width-sunDimension)/2, (height-sunDimension)/2, sunDimension, sunDimension);
 
     //asteroid belt
     const Belt = document.createElement('img');
     Belt.src = belt;
-    let x:number = 400;
+    let x:number = 400 * .85;
     let y:number = 0; //trying to find a way to change animation speed
     let z:number = y/10;
     context.translate(width/2, height/2);
@@ -83,7 +85,9 @@ const Canvas =({width, height}: CanvasProps) => {
     context.translate(-(width)/2, -(height)/2);
 
     context.restore();
-
+    context.save();
+    context.scale(.85,.85);
+    context.translate(135,60);
     //ORBITS
     //Mercury orbit
     makeOrbit(context, 45);
@@ -94,13 +98,15 @@ const Canvas =({width, height}: CanvasProps) => {
     //Mars orbit
     makeOrbit(context, 135);
     //Jupiter orbit
-    makeOrbit(context,205);
+    makeOrbit(context, 205);
     //Saturn orbit
     makeOrbit(context, 245);
     //Uranus orbit
     makeOrbit(context, 285);
     //Neptune orbit
     makeOrbit(context,325);
+
+    context.restore();
 
     window.requestAnimationFrame(() => draw(context));},[width,height]) 
 
