@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core";
 import PlanetsInfo from "components/PlanetsInfo/PlanetsInfo";
 import "./../../assets/ModalStyle.css";
+import QuizInfo from "components/Quizzes/Quizinfo"; 
 function NavBar() {
   const [modalContent, setModalContent] = useState(
     <React.Fragment></React.Fragment>
@@ -73,10 +74,10 @@ function NavBar() {
           onClose={() => SetDropDown(null)}
         >
           <MenuItem>Jupiter Quiz</MenuItem>
-          <MenuItem>Earth Quiz</MenuItem>
-          <MenuItem>Mars Quiz</MenuItem>
-          <MenuItem>Neptune Quiz</MenuItem>
-          <MenuItem>Venus Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Earth'}/>);setShowModal(true);}}>Earth Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Mars'}/>);setShowModal(true);}}>Mars Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Neptune'}/>);setShowModal(true);}}>Neptune Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Venus'}/>);setShowModal(true);}}>Venus Quiz</MenuItem>
           <MenuItem>Mercury Quiz</MenuItem>
           <MenuItem>Saturn Quiz</MenuItem>
           <MenuItem>Uranus Quiz</MenuItem>
@@ -86,8 +87,10 @@ function NavBar() {
         </Typography>
       </Toolbar>
       <Modal open={showModal}>
-        <div className="modal-container">
+        <div>
+          <div className="modal-container" style={{justifyContent:"center"}}>
           {modalContent}
+          </div>
           <Button className="closeModal" onClick={() => setShowModal(false)}>
             <div className='close'>x</div>
           </Button>
