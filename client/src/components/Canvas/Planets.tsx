@@ -87,7 +87,7 @@ const Canvas =({width, height}: CanvasProps) => {
     context.restore();
     context.save();
     context.scale(.85,.85);
-    context.translate(135,60);
+    context.translate(115,57);
     //ORBITS
     //Mercury orbit
     makeOrbit(context, 45);
@@ -122,11 +122,30 @@ const Canvas =({width, height}: CanvasProps) => {
   },[draw]);
   
 
-  return <canvas ref = {canvasRef} height={height} width ={width} style = {{position:'absolute', zIndex:50}}/>
+  return (
+    <canvas
+      ref={canvasRef}
+      height={height}
+      width={width}
+      style={{
+        padding: 0,
+        margin: "auto",
+        display: "block",
+        width: width,
+        height: height,
+        position: "absolute",
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        zIndex: 50,
+      }}
+    />
+  );
 };
 
 Canvas.defaultProps = {
-  width: window.innerWidth,
-  height:window.innerHeight,
+  width: window.innerWidth*.85,
+  height:window.innerHeight*.85,
 };
 export default Canvas;

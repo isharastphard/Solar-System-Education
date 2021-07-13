@@ -9,7 +9,7 @@ const Home: React.FunctionComponent = () => {
       <NavBar/>
       <body>
         <Background width={window.innerWidth} height={window.innerHeight}/>
-        <Canvas width={window.innerWidth} height={window.innerHeight}/>
+        <Canvas width={window.innerWidth*.85} height={window.innerHeight*.85}/>
       </body>
     </div>
   );
