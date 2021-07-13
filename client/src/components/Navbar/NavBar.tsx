@@ -9,10 +9,7 @@ import {
   MenuItem,
   Button,
 } from "@material-ui/core";
-import Earth from "components/PlanetsInfo/Earth";
-import Mars from "components/PlanetsInfo/Mars";
-import Neptune from "components/PlanetsInfo/Neptune";
-import Venus from "components/PlanetsInfo/Venus";
+import PlanetsInfo from "components/PlanetsInfo/PlanetsInfo";
 import "./../../assets/ModalStyle.css";
 function NavBar() {
   const [modalContent, setModalContent] = useState(
@@ -48,13 +45,13 @@ function NavBar() {
           <MenuItem>Jupiter</MenuItem>
           <MenuItem
             onClick={() => {
-              setModalContent(<Earth />);
+              setModalContent(<PlanetsInfo name={'Earth'}/>);
               setShowModal(true);
             }}
-          >Earth{" "}</MenuItem>
-          <MenuItem onClick={() => {setModalContent(<Mars/>);setShowModal(true);}}>Mars</MenuItem>
-          <MenuItem onClick={() => {setModalContent(<Neptune/>);setShowModal(true);}}>Neptune</MenuItem>
-          <MenuItem onClick={() => {setModalContent(<Venus/>);setShowModal(true);}}>Venus </MenuItem>
+          >Earth</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<PlanetsInfo name = {'Mars'}/>);setShowModal(true);}}>Mars</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<PlanetsInfo name = {'Neptune'}/>);setShowModal(true);}}>Neptune</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<PlanetsInfo name = {'Venus'}/>);setShowModal(true);}}>Venus </MenuItem>
           <MenuItem>Mercury </MenuItem>
           <MenuItem>Saturn </MenuItem>
           <MenuItem>Uranus </MenuItem>
