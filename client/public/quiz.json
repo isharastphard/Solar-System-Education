@@ -1,0 +1,54 @@
+[
+    {
+       "id":1,
+       "subject":"sun",
+       "Question":"What type of star is the Sun?",
+       "WrongAnswer":["Red Giant",
+       "Red Dwarf",
+       "White Dwarfs"
+      ],
+       "RightAnswer":"Yelllow Dwarf"
+    },
+    {
+       "id":2,
+       "subject":"sun",
+       "Question":"How old is our Sun (in billions of years)?",
+       "WrongAnswer":["6",
+       "2",
+       "3"],
+       "RightAnswer":"4.5"
+        
+    },
+    {
+        "id":3,
+        "subject":"sun",
+       "Question":"Helium is what percent of the makeup of the Sun?",
+        "WrongAnswer":["92.2",
+         "13.5",
+         "86.5"],
+       "RightAnswer":"7.8"
+
+    },
+    {
+        "id":4,
+        "subject":"sun",
+       "Question":"What percent of our Solar System's mass does the Sun make up?",
+        "WrongAnswer":[
+         "48.7",
+         "88",
+         "50"
+        ],
+       "RightAnswer":"99.8"
+    },
+    {
+        "id":5,
+        "subject":"sun",
+       "Question ":"How hot is the Sun's core (in millions of degrees)?",
+        "WrongAnswer":[
+         "100",
+         "12",
+         "44"
+        ],
+       "RightAnswer":"27"
+    }
+ ]
