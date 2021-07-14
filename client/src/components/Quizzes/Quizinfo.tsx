@@ -63,6 +63,7 @@ function QuizInfo(props: any) {
 	const [showTotalScore, setShowTotalScore] = useState(false);
 	const [score, setScore] = useState(0);
     let next = false;
+    const [active, setActive] = useState(false);
 
     const answerOptionClicked = (isCorrect:any) => {
 		if (isCorrect) {
@@ -80,8 +81,9 @@ function QuizInfo(props: any) {
 			    setShowTotalScore(true);
 		    }
         }
-        next =false;
+        next = false;
     }
+  
 
   return (
     <div style={{ color: "Navy", justifyContent:"center" }}> This is the {props.quizName} Quiz
@@ -101,15 +103,15 @@ function QuizInfo(props: any) {
 					</div>
 					<div className='answer-section'>
 						{question[onQuestion].answerOptions.map((answerOption:any) => (
-							<Button size="small" variant='outlined' onClick={() => answerOptionClicked(answerOption.isCorrect)} style={{background: "silver"}}>{answerOption.answerText}</Button>
+							<Button className='buttonAnswer' size="small" variant='outlined' onClick={() => {answerOptionClicked(answerOption.isCorrect)}} style={{left:'10px'}}> {answerOption.answerText} </Button>
 						))}
 					</div>
 				</>
 			)}
             <div className= 'buttons'>
-            <Button variant='contained' style={{background: "black", color:'white', right:'2em' }}>Previous</Button>
-            <Button variant='contained' onClick= {()=>confirmNextQuestion()} style={{background: "black", color:'white'}}>Confirm</Button>
-            <Button variant='contained' style={{background: "black", color:'white', left:'2em'}}>Next</Button>
+           
+            <Button variant='contained' onClick= {()=>confirmNextQuestion()} style={{background: "black", color:'white', left:'80px', top:'10px'}}>Confirm</Button>
+            
             </div>
 
     </div>
