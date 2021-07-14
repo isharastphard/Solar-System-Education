@@ -50,5 +50,57 @@
          "44"
         ],
        "RightAnswer":"27"
-    }
+    },
+    {
+      "id":6,
+      "subject":"mercury",
+      "Question":"How many Earth days is one Mercury day?",
+      "WrongAnswer":[
+      "3",
+      "Half",
+      "12"
+      ],
+      "RightAnswer":"59"
+   },
+   {
+       "id":7,
+       "subject":"mercury",
+      "Question":"How long does it take light to reach Mercury's surface (in minutes)?",
+      "WrongAnswer":[
+         "1.5",
+         "8"
+      ],
+      "RightAnswer":"2.7"
+   },
+   {
+       "id":8,
+       "subject":"mercury",
+      "Question":"What's Mercury's highest recorded temperature (in Fahrenheit)?",
+      "WrongAnswer":[
+      "2000",
+      "1200",
+      "1550"
+      ],
+      "RightAnswer":"800"
+      
+   },
+   {
+       "id":9,
+       "subject":"mercury",
+      "Question":"What's Mercury's lowest recorded temperature (in Fahrenheit)?",
+      "WrongAnswer":["-40",
+      "32",
+      "-400"],
+      "RightAnswer":"-290"
+   },
+   {
+       "id":10,
+       "subject":"mercury",
+      "Question":"How many moons does Mercury have?",
+      "WrongAnswer":[
+         "1",
+         "2",
+         "3"],
+      "RightAnswer":"0"
+   }
  ]
