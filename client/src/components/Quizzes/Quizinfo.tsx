@@ -12,7 +12,7 @@ function QuizInfo(props: any) {
     fetchQuiz();
   }, []);
 
-  const [data , setData]=useState([])
+  const [data , setData]=useState<string[]>([])
 
   const getData=()=>{
     fetch('quiz.json'
@@ -129,7 +129,7 @@ return (
           <div> {data.map((item:any) =>  <>
                     <h4>{item.subject}</h4>
                     <h5>{item.Question}</h5>
-                    <p>{item.WrongAnswer1} {" "} {item.WrongAnswer2} {" "} {item.RightAnswer} {item.WrongAnswer3} </p>
+                    <p>{item.WrongAnswer[0]} {" "} {item.WrongAnswer[1]} {" "} {item.RightAnswer} {item.WrongAnswer[2]} </p>
                   </>
            )} </div>
         </div>
