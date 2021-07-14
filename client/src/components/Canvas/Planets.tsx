@@ -138,8 +138,40 @@ const Canvas = ({ width, height }: CanvasProps) => {
       var NeptuneO = makeOrbit(context, 325);
 
       canvas.addEventListener("click", function (event: any) {
-        if (context.isPointInPath(MercuryO, event.offsetX, event.offsetY)) {
+        if (context.isPointInPath(Sun, event.offsetX, event.offsetY)) {
+          setModalContent(<PlanetsInfo name={"Sun"} />);
+          setShowModal(true);
+        }
+        else if (context.isPointInPath(MercuryO, event.offsetX, event.offsetY)) {
           setModalContent(<PlanetsInfo name={"Mercury"} />);
+          setShowModal(true);
+        }
+        else if (context.isPointInPath(VenusO, event.offsetX, event.offsetY)) {
+          setModalContent(<PlanetsInfo name={"Venus"} />);
+          setShowModal(true);
+        }
+        else if (context.isPointInPath(EarthO, event.offsetX, event.offsetY)) {
+          setModalContent(<PlanetsInfo name={"Earth"} />);
+          setShowModal(true);
+        }
+        else if (context.isPointInPath(MarsO, event.offsetX, event.offsetY)) {
+          setModalContent(<PlanetsInfo name={"Mars"} />);
+          setShowModal(true);
+        }
+        else if (context.isPointInPath(JupiterO, event.offsetX, event.offsetY)) {
+          setModalContent(<PlanetsInfo name={"Jupiter"} />);
+          setShowModal(true);
+        }
+        else if (context.isPointInPath(SaturnO, event.offsetX, event.offsetY)) {
+          setModalContent(<PlanetsInfo name={"Saturn"} />);
+          setShowModal(true);
+        }
+        else if (context.isPointInPath(UranusO, event.offsetX, event.offsetY)) {
+          setModalContent(<PlanetsInfo name={"Uranus"} />);
+          setShowModal(true);
+        }
+        else if (context.isPointInPath(NeptuneO, event.offsetX, event.offsetY)) {
+          setModalContent(<PlanetsInfo name={"Neptune"} />);
           setShowModal(true);
         }
       });
