@@ -107,9 +107,9 @@ function QuizInfo(props: any) {
 				</>
 			)}
             <div className= 'buttons'>
-            <Button variant='contained' style={{background: "black", color:'white', right:'2em' }}>Previous</Button>
+           {/* <Button variant='contained' style={{background: "black", color:'white', right:'2em' }}>Previous</Button>*/}
             <Button variant='contained' onClick= {()=>confirmNextQuestion()} style={{background: "black", color:'white'}}>Confirm</Button>
-            <Button variant='contained' style={{background: "black", color:'white', left:'2em'}}>Next</Button>
+            {/*<Button variant='contained' style={{background: "black", color:'white', left:'2em'}}>Next</Button>-->*/}
             </div>
 
     </div>

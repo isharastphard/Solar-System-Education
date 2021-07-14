@@ -21,10 +21,10 @@ interface CanvasProps{
 const Canvas = ({ width, height }: CanvasProps) => {
   let canvasRef = useRef<HTMLCanvasElement | null>(null);
 
-  const [modalContent, setModalContent] = useState(
-    <React.Fragment></React.Fragment>
-  );
-  const [showModal, setShowModal] = useState(false);
+ // const [modalContent, setModalContent] = useState(
+ //   <React.Fragment></React.Fragment>
+ // );
+ // const [showModal, setShowModal] = useState(false);
 
   function makeOrbit(context: any, x: number) {
     //context.beginPath();
@@ -59,26 +59,27 @@ const Canvas = ({ width, height }: CanvasProps) => {
       //PLANETS
 
       var time = new Date();
-      // context.rotate(((2*Math.PI)/60)*time.getSeconds()+((2*Math.PI)/60000)*time.getMilliseconds());
+      context.rotate(((2*Math.PI)/60)*time.getSeconds()+((2*Math.PI)/60000)*time.getMilliseconds());
       context.translate(90, 0);
+      context.scale(.85, .85);
 
       //Mercury
       //context.fillRect (-100,83,40,40);//shadow
-      makeBody(context, mercury, -65, -40, 20, 20);
+      makeBody(context, mercury, -85, -40, 20, 20);
       //Venus
-      makeBody(context, venus, -143, -78, 30, 30);
+      makeBody(context, venus, -148, -80, 30, 30);
       //Earth
       makeBody(context, earth, -100, 83, 35, 35);
       //Mars - Might need another PNG without a shadow
-      makeBody(context, mars, 32, -12, 25, 25);
+      makeBody(context, mars, 15, -12, 25, 25);
       //Jupiter
-      makeBody(context, jupiter, -325, 30, 80, 80);
+      makeBody(context, jupiter, -335, 40, 80, 80);
       //Saturn
-      makeBody(context, saturn, -330, -150, 60, 60);
+      makeBody(context, saturn, -345, -150, 60, 60);
       //Uranus
-      makeBody(context, uranus, -220, 245, 33, 33);
+      makeBody(context, uranus, -220, 255, 33, 33);
       //Neptune
-      makeBody(context, neptune, 50, -300, 35, 35);
+      makeBody(context, neptune, 50, -290, 35, 35);
 
       context.restore();
 
@@ -137,7 +138,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
       //Neptune orbit
       var NeptuneO = makeOrbit(context, 325);
 
-      canvas.addEventListener("click", function (event: any) {
+       /*canvas.addEventListener("click", function (event: any) {
         if (context.isPointInPath(Sun, event.offsetX, event.offsetY)) {
           setModalContent(<PlanetsInfo name={"Sun"} />);
           setShowModal(true);
@@ -174,7 +175,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
           setModalContent(<PlanetsInfo name={"Neptune"} />);
           setShowModal(true);
         }
-      });
+      }); */
 
       context.restore();
 
