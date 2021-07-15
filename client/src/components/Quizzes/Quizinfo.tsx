@@ -12,129 +12,124 @@ function QuizInfo(props: any) {
     fetchQuiz();
   }, []);
 
-  const [data , setData]=useState<string[]>([])
+  const [data, setData] = useState<any[]>([])
 
-  const getData=()=>{
+  const getData = () => {
     fetch('quiz.json'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
+      , {
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        }
+      }
     )
-      .then(function(response){
+      .then(function (response) {
         console.log(response)
         return response.json();
       })
-      .then(function(myJson) {
+      .then(function (myJson) {
         console.log(myJson);
-        const filtered= myJson.filter(function(n:any){
-            console.log('\"'+n.subject+'\" ');
-            console.log('\"' + props.quizName.toLowerCase()+'\"')
-            return n.subject === props.quizName.toLowerCase()
+        const filtered = myJson.filter(function (n: any) {
+          console.log('\"' + n.subject + '\" ');
+          console.log('\"' + props.quizName.toLowerCase() + '\"')
+          return n.subject === props.quizName.toLowerCase()
         })
         console.log(filtered);
         setData(filtered);
       });
   }
-  useEffect(()=>{
+  useEffect(() => {
     getData()
-  },[])
-
-  const question: any = [data];
-  console.log(question.subject);
- 
-  
-//     const question: any = [
-//     {
-//       questionText: "What is Earth's acceleration due to gravity?",
-//       answerOptions: [
-//         { answerText: "0.0", isCorrect: false },
-//         { answerText: "5.44", isCorrect: false },
-//         { answerText: "9.8", isCorrect: true },
-//         { answerText: "16.4", isCorrect: false },
-//       ],
-//     },
-//     {
-//       questionText: "Earth is how many planets from the Sun?",
-//       answerOptions: [
-//         { answerText: "Earth is 3rd", isCorrect: true },
-//         { answerText: "Earth is 1st", isCorrect: false },
-//         { answerText: "Earth is 5th", isCorrect: false },
-//         { answerText: "Earth is 4th", isCorrect: false },
-//       ],
-//     },
-//     {
-//       questionText: "How many moons does Earth have?",
-//       answerOptions: [
-//         { answerText: "6", isCorrect: false },
-//         { answerText: "1", isCorrect: true },
-//         { answerText: "4", isCorrect: false },
-//         { answerText: "12", isCorrect: false },
-//       ],
-//     },
-//     {
-//       questionText: "How long is a day on Earth?",
-//       answerOptions: [
-//         { answerText: "23 hours", isCorrect: false },
-//         { answerText: "15 hours", isCorrect: false },
-//         { answerText: "24 hours", isCorrect: true },
-//         { answerText: "33 hours", isCorrect: false },
-//       ],
-//     },
-//     {
-//       questionText: "What percent of Earth's atmosphere is Nitrogen?",
-//       answerOptions: [
-//         { answerText: "21", isCorrect: false },
-//         { answerText: "78", isCorrect: true },
-//         { answerText: "1", isCorrect: false },
-//         { answerText: "44", isCorrect: false },
-//       ],
-//     },
-//   ];
+  }, [])
 
 
+  const [currentQuestion, setcurrentQuestion] = useState(0);
+  const [showTotalScore, setShowTotalScore] = useState(false);
+  const [score, setScore] = useState(0);
+  let next = false;
 
-//   const [onQuestion, setOnQuestion] = useState(0);
-//   const [showTotalScore, setShowTotalScore] = useState(false);
-//   const [score, setScore] = useState(0);
-//   let next = false;
-//   const [active, setActive] = useState(false);
+  const answerOptionClicked = (isCorrect: any) => {
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+    next = true;
+  };
 
-//   const answerOptionClicked = (isCorrect: any) => {
-//     if (isCorrect) {
-//       setScore(score + 1);
-//     }
-//     next = true;
-//   };
+  const confirmNextQuestion = () => {
+    if ((next = true)) {
+      const nextQuestion = currentQuestion + 1;
+      if (nextQuestion < data.length) {
+        setcurrentQuestion(nextQuestion);
+      } else {
+        setShowTotalScore(true);
+      }
+    }
+    next = false;
+  };
 
-//   const confirmNextQuestion = () => {
-//     if ((next = true)) {
-//       const nextQuestion = onQuestion + 1;
-//       if (nextQuestion < question.length) {
-//         setOnQuestion(nextQuestion);
-//       } else {
-//         setShowTotalScore(true);
-//       }
-//     }
-//     next = false;
-//   };
-
-return (
-        <div style={{ color: "Navy", justifyContent: "center" }}>
-          {" "}
-          This is the {props.quizName} Quiz
-          <div> {questions}</div>
-          <div> {data.map((item:any) =>  <>
-                    <h4>{item.subject}</h4>
-                    <h5>{item.Question}</h5>
-                    <p>{item.WrongAnswer[0]} {" "} {item.WrongAnswer[1]} {" "} {item.RightAnswer} {item.WrongAnswer[2]} </p>
-                  </>
-           )} </div>
-        </div>
-      );
-    
+  console.log(data[currentQuestion])
+  if(data.length === 0){
+    return null
+  }else{
+  return (
+    <div style={{ color: "Navy", justifyContent: "center" }}>
+      {" "}
+      This is the {props.quizName} Quiz
+      <div>
+        {showTotalScore ? (
+          <div className="Score">
+            You scored {score} out of {data.length}
+          </div>
+        ) : (
+          <>
+            <div className="Questions">
+              <div className="Counter">
+                <span>Question {currentQuestion + 1}</span>/{data.length}
+              </div>
+              <h4 className="Choices">
+                {data[currentQuestion].question}
+              </h4>
+              <div style={{ color: "red" }}>
+                Select one of the answers by clicking on it and then confirm your
+                answer with pressing confirm
+              </div>
+            </div>
+            <div className="AnswerOptions">
+              {data[currentQuestion].answerOptions.map((answerOptions: any) => (
+                <Button
+                  className="buttonAnswer"
+                  size="small"
+                  variant="outlined"
+                  onClick={() => {
+                    answerOptionClicked(answerOptions.isCorrect);
+                  }}
+                  style={{ left: "10px" }}
+                >
+                  {" "}
+                  {answerOptions.choice}{" "}
+                </Button>
+              ))}
+            </div>
+            <div className="buttons">
+              <Button
+                variant="contained"
+                onClick={() => confirmNextQuestion()}
+                style={{
+                  background: "black",
+                  color: "white",
+                  left: "80px",
+                  top: "10px",
+                }}
+              >
+                Confirm
+              </Button>
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+  );
+  }
 }
 export default QuizInfo;
 
