@@ -73,14 +73,14 @@ function NavBar() {
           open={Boolean(dropDown)}
           onClose={() => SetDropDown(null)}
         >
-          <MenuItem>Jupiter Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Jupiter'}/>);setShowModal(true);}}>Jupiter Quiz</MenuItem>
           <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Earth'}/>);setShowModal(true);}}>Earth Quiz</MenuItem>
           <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Mars'}/>);setShowModal(true);}}>Mars Quiz</MenuItem>
           <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Neptune'}/>);setShowModal(true);}}>Neptune Quiz</MenuItem>
           <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Venus'}/>);setShowModal(true);}}>Venus Quiz</MenuItem>
-          <MenuItem>Mercury Quiz</MenuItem>
-          <MenuItem>Saturn Quiz</MenuItem>
-          <MenuItem>Uranus Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Mercury'}/>);setShowModal(true);}}>Mercury Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Saturn'}/>);setShowModal(true);}}>Saturn Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Uranus'}/>);setShowModal(true);}}>Uranus Quiz</MenuItem>
         </Menu>
         <Typography variant="h6" noWrap>
           <div className="compare">Compare</div>
