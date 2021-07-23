@@ -84,7 +84,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
       context.restore();
 
       context.save();
-      //Sun
+     /* //Sun
       const Sun = document.createElement("img");
       Sun.src = sun;
       let sunDimension: number = 80 * 0.85;
@@ -94,7 +94,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
         (height - sunDimension + 70) / 2,
         sunDimension,
         sunDimension
-      );
+      );*/
 
       //asteroid belt
       const Belt = document.createElement("img");
@@ -116,8 +116,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
       );
       context.translate(-width / 2, -height / 2);
 
-      context.restore();
-      context.save();
+     /* context.save();
       context.scale(0.85, 0.85);
       context.translate(110 + 25, 57 + 50);
       //ORBITS
@@ -178,7 +177,6 @@ const Canvas = ({ width, height }: CanvasProps) => {
       }); */
 
       context.restore();
-
       window.requestAnimationFrame(() => draw(context, canvas));
     },
     [width, height]
