@@ -119,6 +119,7 @@ function QuizInfo(props: any) {
                   color: "white",
                   left: "80px",
                   top: "10px",
+                  justifyContent: "center",
                 }}
               >
                 Confirm

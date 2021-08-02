@@ -12,6 +12,7 @@ import {
 import PlanetsInfo from "components/PlanetsInfo/PlanetsInfo";
 import "./../../assets/ModalStyle.css";
 import QuizInfo from "components/Quizzes/Quizinfo"; 
+import Compare from "components/Compare/Compare"
 function NavBar() {
   const [modalContent, setModalContent] = useState(
     <React.Fragment></React.Fragment>
@@ -86,17 +87,19 @@ function NavBar() {
 
         </Menu>
         <Typography variant="h6" noWrap>
-          <div className="compare">Compare</div>
+          <div className="compare" onClick={() => {setModalContent(<Compare/>);setShowModal(true);}} >Compare</div>
         </Typography>
       </Toolbar>
       <Modal open={showModal}>
         <div>
           <div className="modal-container" style={{justifyContent:"center"}}>
           {modalContent}
-          </div>
+          <span  className="close-button topright">
           <Button className="closeModal" onClick={() => setShowModal(false)}>
             <div className='close'>x</div>
           </Button>
+          </span>
+          </div>
         </div>
       </Modal>
     </AppBar>
