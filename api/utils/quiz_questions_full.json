@@ -214,7 +214,7 @@
         "subject" : "Mercury", 
         "Question" : "Mercury is how many times smaller than Earth?",
         "answerOptions" : [
-            {"choice" : "2,6", "isCorrect" : true },
+            {"choice" : "2.6", "isCorrect" : true },
             {"choice" : "0.5" , "isCorrect" : false },
             {"choice" : "1", "isCorrect" : false },
             {"choice" : "4", "isCorrect" : false }
@@ -466,7 +466,7 @@
     {
         "id" : 43, 
         "subject" : "Mars", 
-        "Question" : "Mars is named after which Roman god?",
+        "Question" : "Mars is named after which Greek god?",
         "answerOptions" : [
             {"choice" : "Hephaestus", "isCorrect" : false },
             {"choice" : "Ares" , "isCorrect" : true },
@@ -526,7 +526,7 @@
             {"choice" : "Oxygen", "isCorrect" : false },
             {"choice" : "Methane", "isCorrect" : false },
             {"choice" : "Helium", "isCorrect" : false },
-            {"choice" : "CarBON Dioxide", "isCorrect" : true }
+            {"choice" : "Carbon Dioxide", "isCorrect" : true }
         ]
     },
     {
