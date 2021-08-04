@@ -93,7 +93,7 @@ function NavBar() {
       </Toolbar>
       <Modal open={showModal}>
         <div>
-          <div className="modal-container" style={{justifyContent:"center"}}>
+          <div className="modal-container">
           {modalContent}
           <span  className="close-button topright">
           <Button className="closeModal" onClick={() => setShowModal(false)}>

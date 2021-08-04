@@ -72,9 +72,11 @@ function QuizInfo(props: any) {
     return null
   }else{
   return (
-    <div style={{ color: "Navy", justifyContent: "center" }}>
+    <div style={{ color: "Navy", position:"absolute"}}>
       {" "}
-      This is the {props.quizName} Quiz
+      <span className="planetTitle">
+        <header className="heading">This is the {props.quizName} Quiz </header>
+        </span>
       <div>
         {showTotalScore ? (
           <div className="Score">
@@ -83,18 +85,17 @@ function QuizInfo(props: any) {
         ) : (
           <>
             <div className="Questions">
-              <div className="Counter">
+              <div className="counter">
                 <span>Question {currentQuestion + 1}</span>/{data.length}
               </div>
-              <h4 className="Choices">
+              <h4 className="choices">
                 {data[currentQuestion].question}
               </h4>
-              <div style={{ color: "red" }}>
-                Select one of the answers by clicking on it and then confirm your
-                answer with pressing confirm
-              </div>
+              <p className="warning" >
+                Select one of the answers by clicking on it and then confirm your answer with pressing confirm
+              </p>
             </div>
-            <div className="AnswerOptions">
+            <div className="answerOptions">
               {data[currentQuestion].answerOptions.map((answerOptions: any) => (
                 <Button
                   className="buttonAnswer"
@@ -103,24 +104,20 @@ function QuizInfo(props: any) {
                   onClick={() => {
                     answerOptionClicked(answerOptions.isCorrect);
                   }}
-                  style={{ left: "10px" }}
+                  style={{width:'10em', background:"linear-gradient(50deg, silver 40%, grey 95%)"}}
                 >
                   {" "}
                   {answerOptions.choice}{" "}
                 </Button>
               ))}
             </div>
-            <div className="buttons">
+            <div className="acceptButtons">
               <Button
+               className="confirm"
                 variant="contained"
                 onClick={() => confirmNextQuestion()}
-                style={{
-                  background: "black",
-                  color: "white",
-                  left: "80px",
-                  top: "10px",
-                  justifyContent: "center",
-                }}
+                style={{background: 'black',
+                  color: 'white',}}
               >
                 Confirm
               </Button>
