@@ -74,6 +74,7 @@ function NavBar() {
           open={Boolean(dropDown)}
           onClose={() => SetDropDown(null)}
         >
+
           <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Jupiter'}/>);setShowModal(true);}}>Jupiter Quiz</MenuItem>
           <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Earth'}/>);setShowModal(true);}}>Earth Quiz</MenuItem>
           <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Mars'}/>);setShowModal(true);}}>Mars Quiz</MenuItem>
