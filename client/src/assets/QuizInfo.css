@@ -1,0 +1,45 @@
+.planetTitle {
+  color: black;
+  font-size: 40px;
+  font-weight: 300;
+  
+}
+
+.counter {
+  font-size: 25px;
+}
+
+.warning {
+  color: red;
+  font-family: monospace;
+  font-style: oblique;
+  font-size: 15px;
+  padding: 10px;
+  border: 1px solid #999;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+}
+
+.answerOptions{
+    position: absolute;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+}
+
+.acceptButtons{
+    position: absolute;
+}
+.confirm {
+  margin-left: auto;
+  margin-right: auto;
+  left: 140px;
+  top: 75px;
+  justify-content: center;
+}
+.choices{
+    margin-left: 12%;
+}

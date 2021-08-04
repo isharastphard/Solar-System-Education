@@ -95,7 +95,9 @@ const Canvas = ({ width, height }: CanvasProps) => {
       ref={canvasRef}
       height={height}
       width={width}
-      style={{position:'absolute', zIndex: 1, backgroundColor:'black'}}
+
+      style={{position:'absolute', zIndex: 1, backgroundColor: 'black'}}
+
     />
   );
 };
