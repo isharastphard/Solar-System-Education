@@ -1,3 +1,4 @@
+
 import React, { useCallback, useEffect, useState, useRef } from "react";
 import sun from "../../images/sun.png"
 import mercury from "../../images/mercury1.png"
@@ -9,6 +10,7 @@ import jupiter from "../../images/Jupiter_rotate.png"
 import saturn from "../../images/saturn.png"
 import uranus from "../../images/uranus.png"
 import neptune from "../../images/Neptune.png"
+
 import {Modal} from "@material-ui/core";
 import PlanetsInfo from "components/PlanetsInfo/PlanetsInfo";
 import "./../../assets/ModalStyle.css";
@@ -17,6 +19,7 @@ interface CanvasProps{
   width: number;
   height: number;
 }
+
 
 const Canvas = ({ width, height }: CanvasProps) => {
   let canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -46,6 +49,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
     Body.src = pic;
     context.drawImage(Body, x, y, pwidth, pheight);
   }
+
 
   const draw = useCallback(
     (context: any, canvas: any) => {
@@ -212,10 +216,12 @@ const Canvas = ({ width, height }: CanvasProps) => {
       }}
     />
   );
+
 };
 
 Canvas.defaultProps = {
   width: window.innerWidth,
   height:window.innerHeight,
 };
+
 export default Canvas;
