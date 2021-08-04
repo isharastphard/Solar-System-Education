@@ -12,6 +12,7 @@ import {
 import PlanetsInfo from "components/PlanetsInfo/PlanetsInfo";
 import "./../../assets/ModalStyle.css";
 import QuizInfo from "components/Quizzes/Quizinfo"; 
+import Compare from "components/Compare/Compare"
 function NavBar() {
   const [modalContent, setModalContent] = useState(
     <React.Fragment></React.Fragment>
@@ -73,27 +74,33 @@ function NavBar() {
           open={Boolean(dropDown)}
           onClose={() => SetDropDown(null)}
         >
-          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Jupiter'}/>);setShowModal(true);}}>Jupiter Quiz</MenuItem>
-          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Earth'}/>);setShowModal(true);}}>Earth Quiz</MenuItem>
-          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Mars'}/>);setShowModal(true);}}>Mars Quiz</MenuItem>
-          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Neptune'}/>);setShowModal(true);}}>Neptune Quiz</MenuItem>
-          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Venus'}/>);setShowModal(true);}}>Venus Quiz</MenuItem>
-          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Mercury'}/>);setShowModal(true);}}>Mercury Quiz</MenuItem>
-          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Saturn'}/>);setShowModal(true);}}>Saturn Quiz</MenuItem>
-          <MenuItem onClick={() => {setModalContent(<QuizInfo quizName = {'Uranus'}/>);setShowModal(true);}}>Uranus Quiz</MenuItem>
+
+          <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Jupiter'}/>);setShowModal(true);}}>Jupiter Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Earth'}/>);setShowModal(true);}}>Earth Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Mars'}/>);setShowModal(true);}}>Mars Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Neptune'}/>);setShowModal(true);}}>Neptune Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Venus'}/>);setShowModal(true);}}>Venus Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Mercury'}/>);setShowModal(true);}}>Mercury Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Saturn'}/>);setShowModal(true);}}>Saturn Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Uranus'}/>);setShowModal(true);}}>Uranus Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'Sun'}/>);setShowModal(true);}}>Sun Quiz</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'General'}/>);setShowModal(true);}}>General Quiz</MenuItem>
+
         </Menu>
         <Typography variant="h6" noWrap>
-          <div className="compare">Compare</div>
+          <div className="compare" onClick={() => {setModalContent(<Compare/>);setShowModal(true);}} >Compare</div>
         </Typography>
       </Toolbar>
       <Modal open={showModal}>
         <div>
           <div className="modal-container" style={{justifyContent:"center"}}>
           {modalContent}
-          </div>
+          <span  className="close-button topright">
           <Button className="closeModal" onClick={() => setShowModal(false)}>
             <div className='close'>x</div>
           </Button>
+          </span>
+          </div>
         </div>
       </Modal>
     </AppBar>

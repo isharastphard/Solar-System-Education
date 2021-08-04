@@ -3,29 +3,32 @@
     padding-bottom: 50px;
     top:50px;
     left:50px;
-    position:relative;
+    position:absolute;
     width: 50%;
     height: 70%;
-    background-color:silver;
+    background-color:white;
     display: flex;
     font-family: sans-serif;
     box-shadow: 0 0 32px rgba(0, 0, 0, .5);
-    border-radius: 4%;
+
 }
 .closeModal{
-    background: linear-gradient(45deg, gray 50%, gray 90%);
-    border-radius: 5;
-    border:  0;
-    color: 'white';
-    height: 3%;
-    width: 3%;
+    background: linear-gradient(50deg, red 50%, red 90%);
+    color:white;
+    height: 2%;
+    width: 2%;
     box-shadow: 0 3px 5px 2px rgba(205, 155, 155, .3);
-    position: relative;
-    left: 70px;
-    
 }
 
 .close{
-    color: snow;
-    border-radius:5;
+    color: white;
 }
+
+.topright {
+    position: absolute;
+    right: 0;
+    top: 0
+  }
+
+
+  
