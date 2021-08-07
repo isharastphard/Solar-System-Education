@@ -21,7 +21,7 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/Earth.glb') as GLTFResult
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Cube001.geometry} material={materials['Default OBJ']} />
+      <mesh geometry={nodes.Cube001.geometry} material={materials['Default OBJ']} visible = {true} position = {[0,0,0]} scale = {.001} />
     </group>
   )
 }

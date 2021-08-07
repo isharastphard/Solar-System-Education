@@ -21,7 +21,7 @@ type GLTFResult = GLTF & {
 export default function Model(props: JSX.IntrinsicElements['group']) {
   const group = useRef<THREE.Group>()
   const { nodes, materials } = useGLTF("Sun.glb") as GLTFResult
-  useFrame(() => {
+  useFrame(() => { //rotates sun around its axis
     group!.current!.rotation.y += .01;
    })
   return (

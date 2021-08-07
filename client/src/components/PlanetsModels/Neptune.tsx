@@ -21,7 +21,7 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/Neptune.glb') as GLTFResult
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Neptune.geometry} material={materials['Default OBJ.001']} rotation={[Math.PI / 2, 0, 0]} />
+      <mesh geometry={nodes.Neptune.geometry} material={materials['Default OBJ.001']} rotation={[Math.PI / 2, 0, 0]} scale = {2}/>
     </group>
   )
 }
