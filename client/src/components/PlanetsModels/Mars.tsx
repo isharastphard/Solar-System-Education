@@ -6,7 +6,7 @@ import * as THREE from 'three'
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader'
-
+import {useFrame} from '@react-three/fiber'
 type GLTFResult = GLTF & {
   nodes: {
     Cube008: THREE.Mesh

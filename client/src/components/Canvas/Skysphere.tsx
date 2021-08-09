@@ -5,7 +5,7 @@ import Sun from "../PlanetsModels/Sun";
 import Earth from "../PlanetsModels/Earth";
 import Mercury from "../PlanetsModels/Mercury";
 import Venus from "../PlanetsModels/Venus"
-  
+import Jupiter from "../PlanetsModels/Jupiter"
 
 
 export default function System() {
@@ -17,6 +17,8 @@ export default function System() {
             <Sun/>
             <Mercury/>
             <Venus/>
+            <Earth/>
+            <Jupiter/>
         </Suspense> 
         <OrbitControls
         enablePan={ true}
