@@ -19,11 +19,14 @@ type GLTFResult = GLTF & {
 export default function Model(props: JSX.IntrinsicElements['group']) {
   const group = useRef<THREE.Group>()
   const { nodes, materials } = useGLTF('/Mars.glb') as GLTFResult
-  return (
-    <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Cube008.geometry} material={materials['Default OBJ.005']} />
-    </group>
-  )
+  useFrame(() => { //rotates planet around sun
+    group!.current!.rotation.y += .019;
+   })
+   return (
+     <group ref={group} {...props} dispose={null}>
+       <mesh geometry={nodes.Cube008.geometry} material={materials['Default OBJ.005']}  position = {[13.5,0,0]} scale ={.0009}/>
+     </group>
+   )
 }
 
 useGLTF.preload('/Mars.glb')

@@ -4,9 +4,9 @@ import { PerspectiveCamera, PointerLockControls, OrbitControls, Stars } from "@r
 import Sun from "../PlanetsModels/Sun";
 import Earth from "../PlanetsModels/Earth";
 import Mercury from "../PlanetsModels/Mercury";
-import Venus from "../PlanetsModels/Venus"
-import Jupiter from "../PlanetsModels/Jupiter"
-
+import Venus from "../PlanetsModels/Venus";
+import Jupiter from "../PlanetsModels/Jupiter";
+import Mars from "../PlanetsModels/Mars"
 
 export default function System() {
     return(
@@ -18,6 +18,7 @@ export default function System() {
             <Mercury/>
             <Venus/>
             <Earth/>
+            <Mars/>
             <Jupiter/>
         </Suspense> 
         <OrbitControls
