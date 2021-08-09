@@ -1,5 +1,5 @@
 .planetTitle {
-  color: black;
+  color: #fec604;
   font-size: 40px;
   font-weight: 300;
   
@@ -37,7 +37,7 @@
   margin-left: auto;
   margin-right: auto;
   left: 140px;
-  top: 75px;
+  top: 185px;
   justify-content: center;
 }
 .choices{

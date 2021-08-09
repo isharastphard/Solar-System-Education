@@ -21,11 +21,11 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
   const group = useRef<THREE.Group>()
   const { nodes, materials } = useGLTF('/Venus.glb') as GLTFResult
   useFrame(() => { //rotates planet around sun
-    group!.current!.rotation.y += .01;
+    group!.current!.rotation.y += .0031;
    })
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.cylindrically_mapped_sphere.geometry} material={materials['Default OBJ.001']} position = {[10,0,0]} scale = {.001} />
+      <mesh geometry={nodes.cylindrically_mapped_sphere.geometry} material={materials['Default OBJ.001']} position = {[14.80,0,0]} scale = {.0027} />
     </group>
   )
 }

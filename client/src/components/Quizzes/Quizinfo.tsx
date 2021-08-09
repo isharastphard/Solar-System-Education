@@ -72,7 +72,7 @@ function QuizInfo(props: any) {
     return null
   }else{
   return (
-    <div style={{ color: "Navy", position:"absolute"}}>
+    <div style={{ color: "#fec604", position:"absolute"}}>
       {" "}
       <span className="planetTitle">
         <header className="heading">This is the {props.quizName} Quiz </header>
@@ -89,7 +89,7 @@ function QuizInfo(props: any) {
                 <span>Question {currentQuestion + 1}</span>/{data.length}
               </div>
               <h4 className="choices">
-                {data[currentQuestion].question}
+                {data[currentQuestion].Question}
               </h4>
               <p className="warning" >
                 Select one of the answers by clicking on it and then confirm your answer with pressing confirm
@@ -116,7 +116,7 @@ function QuizInfo(props: any) {
                className="confirm"
                 variant="contained"
                 onClick={() => confirmNextQuestion()}
-                style={{background: 'black',
+                style={{background: '#2E3B55',
                   color: 'white',}}
               >
                 Confirm

@@ -30,7 +30,7 @@ function PlanetsInfo(props: any) {
   //console.log(data.englishName);
 
   return (
-    <div style={{ color: "Navy" }}> 
+    <div style={{ color: "#fec604" }}> 
       <h2>This is {props.name}</h2>
     <div> {data.map((item:any) =>  <> <div> 
       {props.name}'s density: {item.density}<br></br>

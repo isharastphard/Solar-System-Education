@@ -26,7 +26,7 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
    })
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Cube001.geometry} material={materials.None} material-color='red' visible position={[0, 0, 0]} rotation={[Math.PI / 2, 0, 0]} scale={2}/>
+      <mesh geometry={nodes.Cube001.geometry} material={materials.None} material-color='red' visible position={[0, 0, 0]} rotation={[Math.PI / 2, 0, 0]} scale={15}/>
     </group>
   )
 }

@@ -23,12 +23,12 @@ export default function Model(props: JSX.IntrinsicElements['group']) {
   const group = useRef<THREE.Group>()
   const { nodes, materials } = useGLTF('/Mercury.glb') as GLTFResult
   useFrame(() => { //rotates planet around sun
-   group!.current!.rotation.y += .05;
+   group!.current!.rotation.y += .0308;
   })
   
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes.Cube008.geometry} material={materials['Default OBJ.005']} position = {[5,0,0]} scale ={.0005}  />
+      <mesh geometry={nodes.Cube008.geometry} material={materials['Default OBJ.005']} position = {[10.24,0,0]} scale ={.00108}  />
     </group>
   )
 }

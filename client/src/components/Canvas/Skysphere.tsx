@@ -3,8 +3,14 @@ import { Canvas, useThree } from "@react-three/fiber";
 import { PerspectiveCamera, PointerLockControls, OrbitControls, Stars } from "@react-three/drei";
 import Sun from "../PlanetsModels/Sun";
 import Earth from "../PlanetsModels/Earth";
+import Mars from "../PlanetsModels/Mars"
 import Mercury from "../PlanetsModels/Mercury";
 import Venus from "../PlanetsModels/Venus"
+import Jupiter from "../PlanetsModels/Jupiter"
+import Saturn from "../PlanetsModels/Saturn"
+import Uranus from "../PlanetsModels/Uranus"
+import Neptune from "../PlanetsModels/Neptune"
+import { SignatureKind } from "typescript";
   
 
 
@@ -17,6 +23,12 @@ export default function System() {
             <Sun/>
             <Mercury/>
             <Venus/>
+            <Mars/>
+            <Earth/>
+            <Jupiter/>
+            <Saturn/>
+            <Uranus/>
+            <Neptune/>
         </Suspense> 
         <OrbitControls
         enablePan={ true}
