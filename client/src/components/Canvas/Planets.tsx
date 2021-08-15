@@ -1,37 +1,32 @@
-
-
 import React, { useCallback, useEffect, useState, useRef } from "react";
 
-import sun from "../../images/sun.png"
-import mercury from "../../images/mercury1.png"
-import venus from "../../images/Venus.png"
-import earth from "../../images/earth.png"
-import mars from "../../images/Mars.png"
-import belt from "../../images/asteroid_belt_grey.png"
-import jupiter from "../../images/Jupiter_rotate.png"
-import saturn from "../../images/saturn.png"
-import uranus from "../../images/uranus.png"
-import neptune from "../../images/Neptune.png"
+import sun from "../../images/sun.png";
+import mercury from "../../images/mercury1.png";
+import venus from "../../images/Venus.png";
+import earth from "../../images/earth.png";
+import mars from "../../images/Mars.png";
+import belt from "../../images/asteroid_belt_grey.png";
+import jupiter from "../../images/Jupiter_rotate.png";
+import saturn from "../../images/saturn.png";
+import uranus from "../../images/uranus.png";
+import neptune from "../../images/Neptune.png";
 
-
-import {Modal} from "@material-ui/core";
+import { Modal } from "@material-ui/core";
 import PlanetsInfo from "components/PlanetsInfo/PlanetsInfo";
 import "./../../assets/ModalStyle.css";
 
-
-interface CanvasProps{
+interface CanvasProps {
   width: number;
   height: number;
 }
 
-
 const Canvas = ({ width, height }: CanvasProps) => {
   let canvasRef = useRef<HTMLCanvasElement | null>(null);
 
- // const [modalContent, setModalContent] = useState(
- //   <React.Fragment></React.Fragment>
- // );
- // const [showModal, setShowModal] = useState(false);
+  // const [modalContent, setModalContent] = useState(
+  //   <React.Fragment></React.Fragment>
+  // );
+  // const [showModal, setShowModal] = useState(false);
 
   function makeOrbit(context: any, x: number) {
     //context.beginPath();
@@ -67,9 +62,12 @@ const Canvas = ({ width, height }: CanvasProps) => {
       //PLANETS
 
       var time = new Date();
-      context.rotate(((2*Math.PI)/60)*time.getSeconds()+((2*Math.PI)/60000)*time.getMilliseconds());
+      context.rotate(
+        ((2 * Math.PI) / 60) * time.getSeconds() +
+          ((2 * Math.PI) / 60000) * time.getMilliseconds()
+      );
       context.translate(90, 0);
-      context.scale(.85, .85);
+      context.scale(0.85, 0.85);
 
       //Mercury
       //context.fillRect (-100,83,40,40);//shadow
@@ -92,7 +90,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
       context.restore();
 
       context.save();
-     /* //Sun
+      /* //Sun
       const Sun = document.createElement("img");
       Sun.src = sun;
       let sunDimension: number = 80 * 0.85;
@@ -107,7 +105,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
       //asteroid belt
       const Belt = document.createElement("img");
       Belt.src = belt;
-      let x: number = 400 * .85;
+      let x: number = 400 * 0.85;
       let y: number = 0; //trying to find a way to change animation speed
       let z: number = y / 10;
       context.translate(width / 2, (height + 70) / 2);
@@ -124,7 +122,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
       );
       context.translate(-width / 2, -height / 2);
 
-     /* context.save();
+      /* context.save();
       context.scale(0.85, 0.85);
       context.translate(110 + 25, 57 + 50);
       //ORBITS
@@ -220,13 +218,11 @@ const Canvas = ({ width, height }: CanvasProps) => {
       }}
     />
   );
-
-
 };
 
 Canvas.defaultProps = {
   width: window.innerWidth,
-  height:window.innerHeight,
+  height: window.innerHeight,
 };
 
 export default Canvas;

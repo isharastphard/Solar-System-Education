@@ -1,7 +1,3 @@
-import React from 'react'
+import React from "react";
 
-const Questions= () =>(
-    <div>
-
-    </div>
-)
+const Questions = () => <div></div>;

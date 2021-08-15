@@ -6,8 +6,8 @@ import json
 from bson import json_util
 from flask_cors import CORS #comment this on deployment
 from  pymongo import MongoClient
-
-app = Flask(__name__)
+import os
+app = Flask(__name__, static_folder='build')
 
 CORS(app) #comment this on deployment
 api = Api(app)
@@ -49,6 +49,13 @@ def getplanet_descriptions():
         doc['_id'] = str(doc['_id'])
         response.append(doc)
     return jsonify(response)
+
+@app.route('/', defaults={'path': ''}, methods=['GET']) 
+@app.route('/<path:path>')
+def index(path):     
+    if path != "" and os.path.exists(app.static_folder + '/' + path):         
+        return send_from_directory(app.static_folder, path)     
+    return send_from_directory(app.static_folder, 'index.html')
 
 
 if __name__ == "__main__":

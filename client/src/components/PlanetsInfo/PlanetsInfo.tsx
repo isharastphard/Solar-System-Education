@@ -7,11 +7,9 @@ function PlanetsInfo(props: any) {
   const getStory = async () => {
     await fetch("/PlanetsDescriptions", { method: "GET" })
       .then(function (response) {
-        console.log(response);
         return response.json();
       })
       .then(function (myJson) {
-        console.log(myJson);
         const filtered = myJson.filter(function (n: any) {
           return n.subject === props.name;
         });
@@ -22,17 +20,12 @@ function PlanetsInfo(props: any) {
   const getData = async () => {
     await fetch("/Planets", { method: "GET" })
       .then(function (response) {
-        console.log(response);
         return response.json();
       })
       .then(function (myJson) {
-        console.log(myJson);
         const filtered = myJson.filter(function (n: any) {
-          console.log('"' + n.englishName + '" ');
-          console.log('"' + props.name + '"');
           return n.englishName === props.name;
         });
-        console.log(filtered);
         setData(filtered);
       });
   };
@@ -42,7 +35,20 @@ function PlanetsInfo(props: any) {
     getStory();
   }, []);
 
-  //console.log(data.englishName);
+  const splitParagraph = (text: string): string[] => {
+    const sentences = text.split(".");
+    const paragraphs = [];
+
+    let lastSplit = 0;
+    for (let i = 0; i < sentences.length; i++) {
+      if (i % 5 === 0 && i != 0) {
+        paragraphs.push(sentences.slice(i - 5, i + 1).join("."));
+        lastSplit = i;
+      }
+    }
+    paragraphs.push(sentences.slice(lastSplit, sentences.length + 1).join("."));
+    return paragraphs;
+  };
 
   return (
     <div style={{ color: "#fec604" }}>
@@ -52,9 +58,14 @@ function PlanetsInfo(props: any) {
           <>
             {" "}
             <div>
-              {props.name}'s info: 
+              {props.name}'s info:
               <br></br>
-              {planetStory.info}
+              {splitParagraph(planetStory.info).map((paragraph: string) => (
+                <p style={{ paddingLeft: "10%", paddingRight: "10%" }}>
+                  {" "}
+                  {paragraph}
+                </p>
+              ))}
               <br></br>
             </div>
           </>
