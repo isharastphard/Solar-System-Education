@@ -22,7 +22,6 @@
 }
 
 .answerOptions{
-    position: absolute;
     justify-content: space-evenly;
     margin-left: auto;
     margin-right: auto;
@@ -30,14 +29,10 @@
 
 }
 
-.acceptButtons{
-    position: absolute;
-}
 .confirm {
   margin-left: auto;
   margin-right: auto;
-  left: 140px;
-  top: 185px;
+  margin-top: 185px;
   justify-content: center;
 }
 .choices{

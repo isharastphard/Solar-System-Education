@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "@material-ui/core";
+import { Button, Grid } from "@material-ui/core";
 import "./../../assets/QuizInfo.css";
 
 function QuizInfo(props: any) {
@@ -39,7 +39,7 @@ function QuizInfo(props: any) {
   useEffect(() => {
     getData();
   }, []);
-
+  const [chosenAnswer, setChosenAnswer] = useState(null);
   const [currentQuestion, setcurrentQuestion] = useState(0);
   const [showTotalScore, setShowTotalScore] = useState(false);
   const [score, setScore] = useState(0);
@@ -69,7 +69,7 @@ function QuizInfo(props: any) {
     return null;
   } else {
     return (
-      <div style={{ color: "#fec604", position: "absolute" }}>
+      <div style={{ color: "#fec604" }}>
         {" "}
         <span className="planetTitle">
           <header className="heading">
@@ -78,9 +78,9 @@ function QuizInfo(props: any) {
         </span>
         <div>
           {showTotalScore ? (
-            <div className="Score">
+            <h2 className="Score">
               You scored {score} out of {data.length}
-            </div>
+            </h2>
           ) : (
             <>
               <div className="Questions">
@@ -93,7 +93,13 @@ function QuizInfo(props: any) {
                   your answer with pressing confirm
                 </p>
               </div>
-              <div className="answerOptions">
+              <Grid
+                className="answerOptions"
+                container
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+              >
                 {data[currentQuestion].answerOptions.map(
                   (answerOptions: any) => (
                     <Button
@@ -102,11 +108,15 @@ function QuizInfo(props: any) {
                       variant="outlined"
                       onClick={() => {
                         answerOptionClicked(answerOptions.isCorrect);
+                        setChosenAnswer(answerOptions.choice);
                       }}
                       style={{
                         width: "10em",
-                        background:
-                          "linear-gradient(50deg, silver 40%, grey 95%)",
+                        backgroundColor:
+                          answerOptions.choice === chosenAnswer
+                            ? "whitesmoke"
+                            : "silver",
+                          margin: "10px"
                       }}
                     >
                       {" "}
@@ -114,17 +124,26 @@ function QuizInfo(props: any) {
                     </Button>
                   )
                 )}
-              </div>
-              <div className="acceptButtons">
+              </Grid>
+              <Grid
+                className="acceptButtons"
+                container
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+              >
                 <Button
                   className="confirm"
                   variant="contained"
-                  onClick={() => confirmNextQuestion()}
+                  onClick={() => {
+                    confirmNextQuestion();
+                    setChosenAnswer(null);
+                  }}
                   style={{ background: "#2E3B55", color: "white" }}
                 >
                   Confirm
                 </Button>
-              </div>
+              </Grid>
             </>
           )}
         </div>
