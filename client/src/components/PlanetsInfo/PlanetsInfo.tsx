@@ -49,7 +49,6 @@ function PlanetsInfo(props: any) {
     paragraphs.push(sentences.slice(lastSplit, sentences.length + 1).join("."));
     return paragraphs;
   };
-  //console.log(data.englishName);
 
   return (
     <div style={{ color: "#fec604" }}>
@@ -61,7 +60,7 @@ function PlanetsInfo(props: any) {
             <div>
               {props.name}'s info:
               <br></br>
-              {splitParagraph(planetStory.info).map((paragraph:string) => <p> {paragraph}</p>)}
+              {splitParagraph(planetStory.info).map((paragraph:string) => <p style={{paddingLeft:'10%', paddingRight:'10%' }}> {paragraph}</p>)}
               <br></br>
             </div>
           </>

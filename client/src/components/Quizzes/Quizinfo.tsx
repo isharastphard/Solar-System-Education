@@ -22,17 +22,12 @@ function QuizInfo(props: any) {
       },
     })
       .then(function (response) {
-        console.log(response);
         return response.json();
       })
       .then(function (myJson) {
-        console.log(myJson);
         const filtered = myJson.filter(function (n: any) {
-          console.log('"' + n.subject + '" ');
-          console.log('"' + props.quizName.toLowerCase() + '"');
           return n.subject === props.quizName.toLowerCase();
         });
-        console.log(filtered);
         setData(filtered);
       });
   };
@@ -64,7 +59,7 @@ function QuizInfo(props: any) {
     next = false;
   };
 
-  console.log(data[currentQuestion]);
+  
   if (data.length === 0) {
     return null;
   } else {
