@@ -98,6 +98,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
 
       style={{position:'absolute', zIndex: 1, backgroundColor: 'black'}}
 
+
     />
   );
 };

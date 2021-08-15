@@ -7,6 +7,7 @@ import Skysphere from "../../components/Canvas/Skysphere";
 import NavBar from './../../components/Navbar/NavBar';
 
 
+
 const Home: React.FunctionComponent = () => {
   return (
     <div className="App">
@@ -17,6 +18,7 @@ const Home: React.FunctionComponent = () => {
         <Orbits width={window.innerWidth} height={window.innerHeight}/>
         <Canvas width={window.innerWidth} height={window.innerHeight}/> */}
         <Skysphere/>
+
       </body>
     </div>
   );
