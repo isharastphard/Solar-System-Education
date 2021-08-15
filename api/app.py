@@ -28,7 +28,7 @@ def getplanetinfo():
     for doc in planets:
         doc['_id'] = str(doc['_id'])
         response.append(doc)
-    return json.dumps(response)
+    return jsonify(response)
   
 
 @app.route("/Quiz", methods = ["GET"])
@@ -38,7 +38,7 @@ def getquizquestions():
     for doc in quizzes:
         doc['_id'] = str(doc['_id'])
         response.append(doc)
-    return json.dumps(response)
+    return jsonify(response)
 
 
 @app.route("/PlanetsDescriptions", methods = ["GET"])
@@ -48,7 +48,7 @@ def getplanet_descriptions():
     for doc in descriptions:
         doc['_id'] = str(doc['_id'])
         response.append(doc)
-    return json.dumps(response)
+    return jsonify(response)
 
 
 if __name__ == "__main__":
