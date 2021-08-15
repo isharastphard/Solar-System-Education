@@ -12,36 +12,33 @@ function QuizInfo(props: any) {
     fetchQuiz();
   }, []);
 
-  const [data, setData] = useState<any[]>([])
-  const getData = async() => {
-    await fetch('/Quiz'
-      , {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      }
-    )
+  const [data, setData] = useState<any[]>([]);
+  const getData = async () => {
+    await fetch("/Quiz", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
       .then(function (response) {
-        console.log(response)
+        console.log(response);
         return response.json();
       })
       .then(function (myJson) {
         console.log(myJson);
         const filtered = myJson.filter(function (n: any) {
-          console.log('\"' + n.subject + '\" ');
-          console.log('\"' + props.quizName.toLowerCase() + '\"')
-          return n.subject === props.quizName.toLowerCase()
-        })
+          console.log('"' + n.subject + '" ');
+          console.log('"' + props.quizName.toLowerCase() + '"');
+          return n.subject === props.quizName.toLowerCase();
+        });
         console.log(filtered);
         setData(filtered);
       });
-  }
+  };
   useEffect(() => {
-    getData()
-  }, [])
-
+    getData();
+  }, []);
 
   const [currentQuestion, setcurrentQuestion] = useState(0);
   const [showTotalScore, setShowTotalScore] = useState(false);
@@ -67,67 +64,72 @@ function QuizInfo(props: any) {
     next = false;
   };
 
-  console.log(data[currentQuestion])
-  if(data.length === 0){
-    return null
-  }else{
-  return (
-    <div style={{ color: "#fec604", position:"absolute"}}>
-      {" "}
-      <span className="planetTitle">
-        <header className="heading">This is the {props.quizName} Quiz </header>
+  console.log(data[currentQuestion]);
+  if (data.length === 0) {
+    return null;
+  } else {
+    return (
+      <div style={{ color: "#fec604", position: "absolute" }}>
+        {" "}
+        <span className="planetTitle">
+          <header className="heading">
+            This is the {props.quizName} Quiz{" "}
+          </header>
         </span>
-      <div>
-        {showTotalScore ? (
-          <div className="Score">
-            You scored {score} out of {data.length}
-          </div>
-        ) : (
-          <>
-            <div className="Questions">
-              <div className="counter">
-                <span>Question {currentQuestion + 1}</span>/{data.length}
+        <div>
+          {showTotalScore ? (
+            <div className="Score">
+              You scored {score} out of {data.length}
+            </div>
+          ) : (
+            <>
+              <div className="Questions">
+                <div className="counter">
+                  <span>Question {currentQuestion + 1}</span>/{data.length}
+                </div>
+                <h4 className="choices">{data[currentQuestion].Question}</h4>
+                <p className="warning">
+                  Select one of the answers by clicking on it and then confirm
+                  your answer with pressing confirm
+                </p>
               </div>
-              <h4 className="choices">
-                {data[currentQuestion].Question}
-              </h4>
-              <p className="warning" >
-                Select one of the answers by clicking on it and then confirm your answer with pressing confirm
-              </p>
-            </div>
-            <div className="answerOptions">
-              {data[currentQuestion].answerOptions.map((answerOptions: any) => (
+              <div className="answerOptions">
+                {data[currentQuestion].answerOptions.map(
+                  (answerOptions: any) => (
+                    <Button
+                      className="buttonAnswer"
+                      size="small"
+                      variant="outlined"
+                      onClick={() => {
+                        answerOptionClicked(answerOptions.isCorrect);
+                      }}
+                      style={{
+                        width: "10em",
+                        background:
+                          "linear-gradient(50deg, silver 40%, grey 95%)",
+                      }}
+                    >
+                      {" "}
+                      {answerOptions.choice}{" "}
+                    </Button>
+                  )
+                )}
+              </div>
+              <div className="acceptButtons">
                 <Button
-                  className="buttonAnswer"
-                  size="small"
-                  variant="outlined"
-                  onClick={() => {
-                    answerOptionClicked(answerOptions.isCorrect);
-                  }}
-                  style={{width:'10em', background:"linear-gradient(50deg, silver 40%, grey 95%)"}}
+                  className="confirm"
+                  variant="contained"
+                  onClick={() => confirmNextQuestion()}
+                  style={{ background: "#2E3B55", color: "white" }}
                 >
-                  {" "}
-                  {answerOptions.choice}{" "}
+                  Confirm
                 </Button>
-              ))}
-            </div>
-            <div className="acceptButtons">
-              <Button
-               className="confirm"
-                variant="contained"
-                onClick={() => confirmNextQuestion()}
-                style={{background: '#2E3B55',
-                  color: 'white',}}
-              >
-                Confirm
-              </Button>
-            </div>
-          </>
-        )}
+              </div>
+            </>
+          )}
+        </div>
       </div>
-    </div>
-  );
+    );
   }
 }
 export default QuizInfo;
-

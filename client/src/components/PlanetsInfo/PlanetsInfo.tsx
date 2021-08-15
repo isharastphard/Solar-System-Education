@@ -52,7 +52,7 @@ function PlanetsInfo(props: any) {
           <>
             {" "}
             <div>
-              {props.name}'s info: 
+              {props.name}'s info:
               <br></br>
               {planetStory.info}
               <br></br>
