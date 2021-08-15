@@ -1,8 +1,8 @@
 [
     {
         "id" : 1, 
-        "subject" : "Sun", 
-        "Question" : "What type of star is the Sun?",
+        "subject" : "sun", 
+        "Question" : "What type of star is the sun?",
         "answerOptions" : [
             {"choice" : "Red Giant", "isCorrect" : false},
             {"choice" : "Red Dwarf", "isCorrect" : false },
@@ -12,8 +12,8 @@
     },
     {
         "id" : 2, 
-        "subject" : "Sun", 
-        "Question" : "How old is our Sun (in billions of years)?",
+        "subject" : "sun", 
+        "Question" : "How old is our sun (in billions of years)?",
         "answerOptions" : [
             {"choice" : "4.5" , "isCorrect" : true},
             {"choice" : "6", "isCorrect" : false },
@@ -23,8 +23,8 @@
     },
     {
         "id" : 3, 
-        "subject" : "Sun", 
-        "Question" : "Helium is what percent of the makeup of the Sun?",
+        "subject" : "sun", 
+        "Question" : "Helium is what percent of the makeup of the sun?",
         "answerOptions" : [
             {"choice" : "92.2" , "isCorrect" : false },
             {"choice" : "7.8" , "isCorrect" : true },
@@ -34,8 +34,8 @@
     },
     {
         "id" : 4, 
-        "subject" : "Sun", 
-        "Question" : "What percent of our Solar System's mass does the Sun make up?",
+        "subject" : "sun", 
+        "Question" : "What percent of our Solar Systems's mass does the sun make up?",
         "answerOptions" : [
             {"choice" : "48.7", "isCorrect" : false },
             {"choice" : "88", "isCorrect" : false },
@@ -45,8 +45,8 @@
     },
     {
         "id" : 5, 
-        "subject" : "Sun", 
-        "Question" : "What is the Sun's distance from the galactic center(in miles)?",
+        "subject" : "sun", 
+        "Question" : "What is the sun's distance from the galactic center(in miles)?",
         "answerOptions" : [
             {"choice" : "0", "isCorrect" : false },
             {"choice" : "26,000" , "isCorrect" : true },
@@ -56,8 +56,8 @@
     },
     {
         "id" : 6, 
-        "subject" : "Sun", 
-        "Question" : "What is the Sun's acceleration due to gravity (in m/s^2)?",
+        "subject" : "sun", 
+        "Question" : "What is the sun's acceleration due to gravity (in m/s^2)?",
         "answerOptions" : [
             {"choice" : "9.8", "isCorrect" : false },
             {"choice" : "274" , "isCorrect" : true },
@@ -67,8 +67,8 @@
     },
     {
         "id" : 7, 
-        "subject" : "Sun", 
-        "Question" : "What is the surface of the Sun called?",
+        "subject" : "sun", 
+        "Question" : "What is the surface of the sun called?",
         "answerOptions" : [
             {"choice" : "the radioactive zone", "isCorrect" : false },
             {"choice" :  "the cromosphere", "isCorrect" : false },
@@ -78,8 +78,8 @@
     },
     {
         "id" : 8, 
-        "subject" : "Sun", 
-        "Question" : "How often do the Sun's geographical poles change their magnetic polarity?",
+        "subject" : "sun", 
+        "Question" : "How often do the sun's geographical poles change their magnetic polarity?",
         "answerOptions" : [
             {"choice" : "Never", "isCorrect" : false },
             {"choice" : "22 years" , "isCorrect" : false },
@@ -89,8 +89,8 @@
     },
     {
         "id" : 9, 
-        "subject" : "Sun", 
-        "Question" : "The volume of space controlled by the Sun's magnetic field is called the ?",
+        "subject" : "sun", 
+        "Question" : "The volume of space controlled by the sun's magnetic field is called the ?",
         "answerOptions" : [
             {"choice" : "lithosphere", "isCorrect" : false },
             {"choice" : "heliosphere", "isCorrect" : true },
@@ -100,8 +100,8 @@
     },
     {
         "id" : 10, 
-        "subject" : "Sun", 
-        "Question" : "Which arm in our spiral galaxy (the Milky Way) does our Sun exist in?",
+        "subject" : "sun", 
+        "Question" : "Which arm in our spiral galaxy (the Milky Way) does our sun exist in?",
         "answerOptions" : [
             {"choice" : "Orion Spur", "isCorrect" : true },
             {"choice" : "Carina-Sagittarius", "isCorrect" : false },
@@ -112,8 +112,8 @@
     
     {
         "id" : 11, 
-        "subject" : "Mercury", 
-        "Question" : "How many Earth days is one Mercury day?",
+        "subject" : "mercury", 
+        "Question" : "How many earth days is one mercury day?",
         "answerOptions" : [
             {"choice" : "59", "isCorrect" : false },
             {"choice" : "Half", "isCorrect" : false },
@@ -123,8 +123,8 @@
     },
     {
         "id" : 12, 
-        "subject" : "Mercury", 
-        "Question" : "THow long does it take light to reach Mercury's surface (in minutes)?",
+        "subject" : "mercury", 
+        "Question" : "THow long does it take light to reach mercury's surface (in minutes)?",
         "answerOptions" : [
             {"choice" : "2.7", "isCorrect" : true },
             {"choice" : "1.5", "isCorrect" : false },
@@ -134,8 +134,8 @@
     },
     {
         "id" : 13, 
-        "subject" : "Mercury", 
-        "Question" : "What's Mercury's highest recorded temperature (in Fahrenheit)?",
+        "subject" : "mercury", 
+        "Question" : "What's mercury's highest recorded temperature (in Fahrenheit)?",
         "answerOptions" : [
             {"choice" : "2000", "isCorrect" : false },
             {"choice" : "1200", "isCorrect" : false },
@@ -145,8 +145,8 @@
     },
     {
         "id" : 14, 
-        "subject" : "Mercury", 
-        "Question" : "What's Mercury's lowest recorded temperature (in Fahrenheit)?",
+        "subject" : "mercury", 
+        "Question" : "What's mercury's lowest recorded temperature (in Fahrenheit)?",
         "answerOptions" : [
             {"choice" : "-40", "isCorrect" : false },
             {"choice" : "-290", "isCorrect" : true },
@@ -156,8 +156,8 @@
     },
     {
         "id" : 15, 
-        "subject" : "Mercury", 
-        "Question" : "How many moons does Mercury have?",
+        "subject" : "mercury", 
+        "Question" : "How many moons does mercury have?",
         "answerOptions" : [
             {"choice" : "1", "isCorrect" : false },
             {"choice" : "2", "isCorrect" : false },
@@ -167,8 +167,8 @@
     },
     {
         "id" : 16, 
-        "subject" : "Mercury", 
-        "Question" : "Mercury is what type of planet?",
+        "subject" : "mercury", 
+        "Question" : "mercury is what type of planet?",
         "answerOptions" : [
             {"choice" : "Oceanic", "isCorrect" : false },
             {"choice" : "Gas Giant", "isCorrect" : false },
@@ -178,8 +178,8 @@
     },
     {
         "id" : 17, 
-        "subject" : "Mercury", 
-        "Question" : "Mercury's concentration of which metal is higher than every other planet?",
+        "subject" : "mercury", 
+        "Question" : "mercury's concentration of which metal is higher than every other planet?",
         "answerOptions" : [
             {"choice" : "Iron", "isCorrect" : true },
             {"choice" : "Nickel", "isCorrect" : false },
@@ -189,8 +189,8 @@
     },
     {
         "id" : 18, 
-        "subject" : "Mercury", 
-        "Question" : "What is the name of the spacecraft that first took pictures of Mercury's surface?",
+        "subject" : "mercury", 
+        "Question" : "What is the name of the spacecraft that first took pictures of mercury's surface?",
         "answerOptions" : [
             {"choice" : "CHAMP", "isCorrect" : false },
             {"choice" : "BepiColombo" , "isCorrect" : false },
@@ -200,8 +200,8 @@
     },
     {
         "id" : 19, 
-        "subject" : "Mercury", 
-        "Question" : "What is Mercury's acceleration due to gravity (in m/s^2)?",
+        "subject" : "mercury", 
+        "Question" : "What is mercury's acceleration due to gravity (in m/s^2)?",
         "answerOptions" : [
             {"choice" : "5.1", "isCorrect" : false },
             {"choice" : "3.7" , "isCorrect" : true },
@@ -211,8 +211,8 @@
     },
     {
         "id" : 20, 
-        "subject" : "Mercury", 
-        "Question" : "Mercury is how many times smaller than Earth?",
+        "subject" : "mercury", 
+        "Question" : "mercury is how many times smaller than earth?",
         "answerOptions" : [
             {"choice" : "2.6", "isCorrect" : true },
             {"choice" : "0.5" , "isCorrect" : false },
@@ -223,8 +223,8 @@
     
     {
         "id" : 21, 
-        "subject" : "Venus", 
-        "Question" : "Surface temperature on Venus (in Fahrenheit)?",
+        "subject" : "venus", 
+        "Question" : "Surface temperature on venus (in Fahrenheit)?",
         "answerOptions" : [
             {"choice" : "900", "isCorrect" : true},
             {"choice" : "80", "isCorrect" : false },
@@ -234,19 +234,19 @@
     },
     {
         "id" : 22, 
-        "subject" : "Venus", 
+        "subject" : "venus", 
         "Question" : "Venus is commonly referred to as which inner planet's twin?",
         "answerOptions" : [
-            {"choice" : "Mercury" , "isCorrect" : false },
-            {"choice" : "Earth" , "isCorrect" : true },
-            {"choice" : "Jupiter" , "isCorrect" : false },
-            {"choice" : "Mars" , "isCorrect" : false }
+            {"choice" : "mercury" , "isCorrect" : false },
+            {"choice" : "earth" , "isCorrect" : true },
+            {"choice" : "jupiter" , "isCorrect" : false },
+            {"choice" : "mars" , "isCorrect" : false }
         ]
     },
     {
         "id" : 23, 
-        "subject" : "Venus", 
-        "Question" : "How long is a Venus day, in Earth days?",
+        "subject" : "venus", 
+        "Question" : "How long is a venus day, in earth days?",
         "answerOptions" : [
             {"choice" : "300", "isCorrect" : false },
             {"choice" : "90", "isCorrect" : false },
@@ -256,8 +256,8 @@
     },
     {
         "id" : 24, 
-        "subject" : "Venus", 
-        "Question" : "How long is a Venus year, in Earth days?",
+        "subject" : "venus", 
+        "Question" : "How long is a venus year, in earth days?",
         "answerOptions" : [
             {"choice" : "225", "isCorrect" : true },
             {"choice" : "365", "isCorrect" : false },
@@ -267,19 +267,19 @@
     },
     {
         "id" : 25, 
-        "subject" : "Venus", 
-        "Question" : "What do Venus' clouds smell like?",
+        "subject" : "venus", 
+        "Question" : "What do venus' clouds smell like?",
         "answerOptions" : [
             {"choice" : "Cheese", "isCorrect" : false },
-            {"choice" : "Rainbows and Sunshine", "isCorrect" : false },
+            {"choice" : "Rainbows and sunshine", "isCorrect" : false },
             {"choice" : "Iron", "isCorrect" : false },
             {"choice" : "Rotten Eggs" , "isCorrect" : true }
         ]
     },
     {
         "id" : 26, 
-        "subject" : "Venus", 
-        "Question" : "The clouds that trap heat on Venus are made of what?",
+        "subject" : "venus", 
+        "Question" : "The clouds that trap heat on venus are made of what?",
         "answerOptions" : [
             {"choice" : "Sulfuric Acid", "isCorrect" : true },
             {"choice" :"Oxygen" , "isCorrect" : false },
@@ -289,8 +289,8 @@
     },
     {
         "id" : 27, 
-        "subject" : "Venus", 
-        "Question" : "What is the longest a probe has lasted on Venus' surface?",
+        "subject" : "venus", 
+        "Question" : "What is the longest a probe has lasted on venus' surface?",
         "answerOptions" : [
             {"choice" : "23 minutes", "isCorrect" : false },
             {"choice" : "1 hour", "isCorrect" : false },
@@ -300,19 +300,19 @@
     },
     {
         "id" : 28, 
-        "subject" : "Venus", 
+        "subject" : "venus", 
         "Question" : "Which of these planets rotates backwards?",
         "answerOptions" : [
-            {"choice" :  "Jupiter", "isCorrect" : false },
-            {"choice" : "Mars", "isCorrect" : false },
-            {"choice" : "Venus", "isCorrect" : true },
-            {"choice" : "Neptune", "isCorrect" : false }
+            {"choice" :  "jupiter", "isCorrect" : false },
+            {"choice" : "mars", "isCorrect" : false },
+            {"choice" : "venus", "isCorrect" : true },
+            {"choice" : "neptune", "isCorrect" : false }
         ]
     },
     {
         "id" : 29, 
-        "subject" : "Venus", 
-        "Question" : "Venus' atmosphere mostly consists of which gas?",
+        "subject" : "venus", 
+        "Question" : "venus' atmosphere mostly consists of which gas?",
         "answerOptions" : [
             {"choice" : "Carbon Dioxide", "isCorrect" : true },
             {"choice" : "Sulfur Dioxide", "isCorrect" : false },
@@ -322,8 +322,8 @@
     },
     {
         "id" : 30, 
-        "subject" : "Venus", 
-        "Question" : "How many seasons does Venus have?" ,
+        "subject" : "venus", 
+        "Question" : "How many seasons does venus have?" ,
         "answerOptions" : [
             {"choice" : "1" , "isCorrect" : false },
             {"choice" : "0", "isCorrect" : true},
@@ -333,8 +333,8 @@
     },
     {
         "id" : 31, 
-        "subject" : "Earth", 
-        "Question" : "What is Earth's acceleration due to gravity?",
+        "subject" : "earth", 
+        "Question" : "What is earth's acceleration due to gravity?",
         "answerOptions" : [
             {"choice" : "0.0", "isCorrect" : false },
             {"choice" :"9.8" , "isCorrect" : true },
@@ -344,19 +344,19 @@
     },
     {
         "id" : 32, 
-        "subject" : "Earth", 
-        "Question" : "Earth is how many planets from the Sun?",
+        "subject" : "earth", 
+        "Question" : "earth is how many planets from the sun?",
         "answerOptions" : [
-            {"choice" : "Earth is 3rd", "isCorrect" : true },
-            {"choice" : "Earth is 1st", "isCorrect" : false },
-            {"choice" : "Earth is 5th", "isCorrect" : false },
-            {"choice" : "Earth is 4th", "isCorrect" : false }
+            {"choice" : "earth is 3rd", "isCorrect" : true },
+            {"choice" : "earth is 1st", "isCorrect" : false },
+            {"choice" : "earth is 5th", "isCorrect" : false },
+            {"choice" : "earth is 4th", "isCorrect" : false }
         ]
     },
     {
         "id" : 33, 
-        "subject" : "Earth", 
-        "Question" : "How many moons does Earth have?",
+        "subject" : "earth", 
+        "Question" : "How many moons does earth have?",
         "answerOptions" : [
             {"choice" : "6" , "isCorrect" : false },
             {"choice" : "4", "isCorrect" : false },
@@ -366,8 +366,8 @@
     },
     {
         "id" : 34, 
-        "subject" :"Earth", 
-        "Question" :"How long is a revolution on Earth?" ,
+        "subject" :"earth", 
+        "Question" :"How long is a revolution on earth?" ,
         "answerOptions" : [
             {"choice" : "455 days", "isCorrect" : false },
             {"choice" : "360 days", "isCorrect" : false },
@@ -377,8 +377,8 @@
     },
     {
         "id" : 35, 
-        "subject" : "Earth", 
-        "Question" : "What percent of Earth's atmosphere is Nitrogen?",
+        "subject" : "earth", 
+        "Question" : "What percent of earth's atmosphere is Nitrogen?",
         "answerOptions" : [
             {"choice" : "78", "isCorrect" : true },
             {"choice" : "21" , "isCorrect" : false },
@@ -388,8 +388,8 @@
     },
     {
         "id" : 36, 
-        "subject" : "Earth", 
-        "Question" : "Approximately how long does it take light to reach Earth?",
+        "subject" : "earth", 
+        "Question" : "Approximately how long does it take light to reach earth?",
         "answerOptions" : [
             {"choice" : "8.5 Minutes", "isCorrect" : true },
             {"choice" : "!5 Minutes", "isCorrect" : false },
@@ -399,8 +399,8 @@
     },
     {
         "id" : 37, 
-        "subject" : "Earth", 
-        "Question" : "What is Earth's distance from the sun (in million miles)?" ,
+        "subject" : "earth", 
+        "Question" : "What is earth's distance from the sun (in million miles)?" ,
         "answerOptions" : [
             {"choice" : "22" , "isCorrect" : false },
             {"choice" : "400" , "isCorrect" : false },
@@ -410,7 +410,7 @@
     },
     {
         "id" : 38, 
-        "subject" : "Earth", 
+        "subject" : "earth", 
         "Question" : "What is it called in the hemispheres wheen there is 24 hours or more of darkness?",
         "answerOptions" : [
             {"choice" : "Civil Twilight", "isCorrect" : false },
@@ -421,19 +421,19 @@
     },
     {
         "id" : 39, 
-        "subject" : "Earth", 
+        "subject" : "earth", 
         "Question" : "What is it called in the hemispheres when the sun does not set below the horizon?",
         "answerOptions" : [
             {"choice" : "Philadelphia", "isCorrect" : false },
-            {"choice" : "Midnight Sun", "isCorrect" : true },
+            {"choice" : "Midnight sun", "isCorrect" : true },
             {"choice" : "White Nights", "isCorrect" : false },
             {"choice" : "Yellow days", "isCorrect" : false }
         ]
     },
     {
         "id" : 40, 
-        "subject" : "Earth", 
-        "Question" : "How many atmospheric layers does Earth have?",
+        "subject" : "earth", 
+        "Question" : "How many atmospheric layers does earth have?",
         "answerOptions" : [
             {"choice" : "3", "isCorrect" : false },
             {"choice" :"4" , "isCorrect" : false },
@@ -443,8 +443,8 @@
     },
     {
         "id" : 41, 
-        "subject" : "Mars", 
-        "Question" :"How many moons does Mars have?" ,
+        "subject" : "mars", 
+        "Question" :"How many moons does mars have?" ,
         "answerOptions" : [
             {"choice" : "1", "isCorrect" : false},
             {"choice" : "3" , "isCorrect" : false },
@@ -454,8 +454,8 @@
     },
     {
         "id" : 42, 
-        "subject" : "Mars", 
-        "Question" :"What is Mars' nickname?" ,
+        "subject" : "mars", 
+        "Question" :"What is mars' nickname?" ,
         "answerOptions" : [
             {"choice" : "Red Planet", "isCorrect" : true },
             {"choice" : "Rusty Planet", "isCorrect" : false },
@@ -465,8 +465,8 @@
     },
     {
         "id" : 43, 
-        "subject" : "Mars", 
-        "Question" : "Mars is named after which Greek god?",
+        "subject" : "mars", 
+        "Question" : "mars is named after which Greek god?",
         "answerOptions" : [
             {"choice" : "Hephaestus", "isCorrect" : false },
             {"choice" : "Ares" , "isCorrect" : true },
@@ -476,8 +476,8 @@
     },
     {
         "id" : 44, 
-        "subject" : "Mars", 
-        "Question" :"Mars is home to the largest volcano in the Solar System. What is it's name?" ,
+        "subject" : "mars", 
+        "Question" :"mars is home to the largest volcano in the Solar System. What is it's name?" ,
         "answerOptions" : [
             {"choice" : "Tharsis Rise", "isCorrect" : false },
             {"choice" : "Enceladus" , "isCorrect" : false },
@@ -487,8 +487,8 @@
     },
     {
         "id" : 45, 
-        "subject" : "Mars", 
-        "Question" : "What is a day on Mars called?",
+        "subject" : "mars", 
+        "Question" : "What is a day on mars called?",
         "answerOptions" : [
             {"choice" : "Day" , "isCorrect" : false },
             {"choice" : "Sol", "isCorrect" : true },
@@ -498,8 +498,8 @@
     },
     {
         "id" : 46, 
-        "subject" : "Mars", 
-        "Question" : "The canyon system that's 10x bigger than Earth's Grand Canyon is called?" ,
+        "subject" : "mars", 
+        "Question" : "The canyon system that's 10x bigger than earth's Grand Canyon is called?" ,
         "answerOptions" : [
             {"choice" : "Valles Marineris" , "isCorrect" : true },
             {"choice" : "Olympus Mons", "isCorrect" : false },
@@ -509,8 +509,8 @@
     },
     {
         "id" : 47, 
-        "subject" : "Mars", 
-        "Question" : "Mars' two moons were discovered by this Astronaut: ",
+        "subject" : "mars", 
+        "Question" : "mars' two moons were discovered by this Astronaut: ",
         "answerOptions" : [
             {"choice" : "Asaph Hall", "isCorrect" : true },
             {"choice" : "Terry Virts", "isCorrect" : false  },
@@ -520,8 +520,8 @@
     },
     {
         "id" : 48, 
-        "subject" : "Mars", 
-        "Question" : "Mars' atmosphere is 96% which of the following gases",
+        "subject" : "mars", 
+        "Question" : "mars' atmosphere is 96% which of the following gases",
         "answerOptions" : [
             {"choice" : "Oxygen", "isCorrect" : false },
             {"choice" : "Methane", "isCorrect" : false },
@@ -531,8 +531,8 @@
     },
     {
         "id" : 49, 
-        "subject" : "Mars", 
-        "Question" : "Which spacecraft was the first to reach Mars' surface?",
+        "subject" : "mars", 
+        "Question" : "Which spacecraft was the first to reach mars' surface?",
         "answerOptions" : [
             {"choice" : "Mariner 4" , "isCorrect" : true },
             {"choice" : "Mariner 3", "isCorrect" : false },
@@ -542,8 +542,8 @@
     },
     {
         "id" : 50, 
-        "subject" : "Mars", 
-        "Question" : "Doqes Mars have a global magnetic sphere?",
+        "subject" : "mars", 
+        "Question" : "Doqes mars have a global magnetic sphere?",
         "answerOptions" : [
             {"choice" : "Sometimes", "isCorrect" : false },
             {"choice" : "No", "isCorrect" : true },
@@ -553,7 +553,7 @@
     },
     {
         "id" : 51, 
-        "subject" : "Jupiter", 
+        "subject" : "jupiter", 
         "Question" : "How many miles away from the sun is the Gas Giant(in million miles)?",
         "answerOptions" : [
             {"choice" : "1000", "isCorrect" : false},
@@ -564,8 +564,8 @@
     },
     {
         "id" : 52, 
-        "subject" : "Jupiter", 
-        "Question" : "How many moons does Jupiter have?",
+        "subject" : "jupiter", 
+        "Question" : "How many moons does jupiter have?",
         "answerOptions" : [
             {"choice" : "75+", "isCorrect" : true},
             {"choice" : "0", "isCorrect" : false },
@@ -575,8 +575,8 @@
     },
     {
         "id" : 53, 
-        "subject" : "Jupiter", 
-        "Question" :"Jupiter is how many planets from the Sun?" ,
+        "subject" : "jupiter", 
+        "Question" :"jupiter is how many planets from the sun?" ,
         "answerOptions" : [
             {"choice" : "6", "isCorrect" : false },
             {"choice" : "5" , "isCorrect" : true},
@@ -586,8 +586,8 @@
     },
     {
         "id" : 54, 
-        "subject" : "Jupiter", 
-        "Question" :"How many spacecraft have traveled to Jupiter?",
+        "subject" : "jupiter", 
+        "Question" :"How many spacecraft have traveled to jupiter?",
         "answerOptions" : [
             {"choice" : "4" , "isCorrect" : false },
             {"choice" : "7" , "isCorrect" : false },
@@ -597,8 +597,8 @@
     },
     {
         "id" : 55, 
-        "subject" : "Jupiter", 
-        "Question" : "Jupiter is how many times more massive than all the other planets combined?",
+        "subject" : "jupiter", 
+        "Question" : "jupiter is how many times more massive than all the other planets combined?",
         "answerOptions" : [
             {"choice" : "5", "isCorrect" : false },
             {"choice" : "20", "isCorrect" : false },
@@ -608,8 +608,8 @@
     },
     {
         "id" : 56, 
-        "subject" : "Jupiter", 
-        "Question" : "What is the name of the giant storm on Jupiter?",
+        "subject" : "jupiter", 
+        "Question" : "What is the name of the giant storm on jupiter?",
         "answerOptions" : [
             {"choice" : "Great Red Spot" , "isCorrect" : true },
             {"choice" : "Great Storm" , "isCorrect" : false },
@@ -619,8 +619,8 @@
     },
     {
         "id" : 57, 
-        "subject" : "Jupiter", 
-        "Question" : "What is the name of the spacecraft currently orbiting Jupiter?",
+        "subject" : "jupiter", 
+        "Question" : "What is the name of the spacecraft currently orbiting jupiter?",
         "answerOptions" : [
             {"choice" : "Rick", "isCorrect" : false },
             {"choice" :"Pioneer" , "isCorrect" : false },
@@ -630,8 +630,8 @@
     },
     {
         "id" : 58, 
-        "subject" : "Jupiter", 
-        "Question" : "Which of Jupiter's moons is bigger than the planet Mercury?",
+        "subject" : "jupiter", 
+        "Question" : "Which of jupiter's moons is bigger than the planet mercury?",
         "answerOptions" : [
             {"choice" : "Callisto", "isCorrect" : false },
             {"choice" : "Ganymede", "isCorrect" : true },
@@ -641,8 +641,8 @@
     },
     {
         "id" : 59, 
-        "subject" : "Jupiter", 
-        "Question" : "WHat are the clouds on Jupiter are made of?",
+        "subject" : "jupiter", 
+        "Question" : "WHat are the clouds on jupiter are made of?",
         "answerOptions" : [
             {"choice" : "Sulfur", "isCorrect" : false },
             {"choice" : "Chlorine", "isCorrect" : false },
@@ -652,8 +652,8 @@
     },
     {
         "id" : 60, 
-        "subject" : "Jupiter", 
-        "Question" : "Which scientist was the first to make detailed observations of Jupiter?",
+        "subject" : "jupiter", 
+        "Question" : "Which scientist was the first to make detailed observations of jupiter?",
         "answerOptions" : [
             {"choice" : "Galileo Galilei", "isCorrect" : true },
             {"choice" : "Nicolaus Coepernicus" , "isCorrect" : false },
@@ -663,8 +663,8 @@
     },
     {
         "id" : 61, 
-        "subject" : "Saturn", 
-        "Question" : "How many rings does Saturn have?",
+        "subject" : "saturn", 
+        "Question" : "How many rings does saturn have?",
         "answerOptions" : [
             {"choice" : "12", "isCorrect" : false },
             {"choice" : "4", "isCorrect" : false },
@@ -674,8 +674,8 @@
     },
     {
         "id" : 62, 
-        "subject" : "Saturn", 
-        "Question" : "How many times did the Cassini spacecraft orbit Saturn, before getting vaporized?",
+        "subject" : "saturn", 
+        "Question" : "How many times did the Cassini spacecraft orbit saturn, before getting vaporized?",
         "answerOptions" : [
             {"choice" : "133", "isCorrect" : false },
             {"choice" : "4", "isCorrect" :false  },
@@ -685,8 +685,8 @@
     },
     {
         "id" : 63, 
-        "subject" : "Saturn", 
-        "Question" : "How many moons does Saturn have?",
+        "subject" : "saturn", 
+        "Question" : "How many moons does saturn have?",
         "answerOptions" : [
             {"choice" : "0-23", "isCorrect" : false },
             {"choice" : "24-52", "isCorrect" : false },
@@ -696,8 +696,8 @@
     },
     {
         "id" : 64, 
-        "subject" : "Saturn", 
-        "Question" : "How many long is a day on Saturn(in hours)?",
+        "subject" : "saturn", 
+        "Question" : "How many long is a day on saturn(in hours)?",
         "answerOptions" : [
             {"choice" : "10.7", "isCorrect" : true },
             {"choice" : "188" , "isCorrect" : false },
@@ -707,8 +707,8 @@
     },
     {
         "id" : 65, 
-        "subject" : "Saturn", 
-        "Question" : "Winds in Saturn's upper atmosphere reach which speed(in meters per second)?",
+        "subject" : "saturn", 
+        "Question" : "Winds in saturn's upper atmosphere reach which speed(in meters per second)?",
         "answerOptions" : [
             {"choice" : "800" , "isCorrect" : false },
             {"choice" : "275", "isCorrect" : false },
@@ -718,8 +718,8 @@
     },
     {
         "id" : 66, 
-        "subject" : "Saturn", 
-        "Question" : "Saturn appears ringless via optical illusion, twice, every how many years" ,
+        "subject" : "saturn", 
+        "Question" : "saturn appears ringless via optical illusion, twice, every how many years" ,
         "answerOptions" : [
             {"choice" : "29.5", "isCorrect" : true },
             {"choice" : "14", "isCorrect" : false },
@@ -729,8 +729,8 @@
     },
     {
         "id" : 67, 
-        "subject" : "Saturn", 
-        "Question" : "Saturn has storms visible on the planet's surface via telescope. What are they called?",
+        "subject" : "saturn", 
+        "Question" : "saturn has storms visible on the planet's surface via telescope. What are they called?",
         "answerOptions" : [
             {"choice" : "Spottem Gottem", "isCorrect" : false },
             {"choice" : "Great Green Gorge", "isCorrect" : false },
@@ -740,8 +740,8 @@
     },
     {
         "id" : 68, 
-        "subject" : "Saturn", 
-        "Question" : "At its North Pole, Saturn's clouds make what shape?",
+        "subject" : "saturn", 
+        "Question" : "At its North Pole, saturn's clouds make what shape?",
         "answerOptions" : [
             {"choice" : "circle", "isCorrect" : false },
             {"choice" : "hexagon", "isCorrect" : true },
@@ -751,19 +751,19 @@
     },
     {
         "id" : 69, 
-        "subject" : "Saturn", 
-        "Question" : "Which of Saturn's moon has an ocean on it?",
+        "subject" : "saturn", 
+        "Question" : "Which of saturn's moon has an ocean on it?",
         "answerOptions" : [
             {"choice" : "Tethys", "isCorrect" : false },
             {"choice" : "Mimas", "isCorrect" : false },
             {"choice" : "Enceladus" , "isCorrect" : true },
-            {"choice" : "Dione", "isCorrect" : false },
+            {"choice" : "Dione", "isCorrect" : false }
         ]
     },
     {
         "id" : 70, 
-        "subject" : "Saturn", 
-        "Question" : "Which of Saturn's moons is one of the two total moons to have an atmosphere?",
+        "subject" : "saturn", 
+        "Question" : "Which of saturn's moons is one of the two total moons to have an atmosphere?",
         "answerOptions" : [
             {"choice" : "Titan", "isCorrect" : true },
             {"choice" : "Dione", "isCorrect" : false },
@@ -773,8 +773,8 @@
     },
     {
         "id" : 71, 
-        "subject" : "Uranus", 
-        "Question" : "WHat is Uranus' nickname?",
+        "subject" : "uranus", 
+        "Question" : "What is uranus' nickname?",
         "answerOptions" : [
             {"choice" : "Sideways Planet", "isCorrect" : true },
             {"choice" : "The Blue Planet" , "isCorrect" : false },
@@ -784,8 +784,8 @@
     },
     {
         "id" : 72, 
-        "subject" : "Uranus", 
-        "Question" : "WHat type of planet is Uranus?",
+        "subject" : "uranus", 
+        "Question" : "WHat type of planet is uranus?",
         "answerOptions" : [
             {"choice" : "Terrestrial", "isCorrect" : false },
             {"choice" : "Gas Giant", "isCorrect" : false},
@@ -795,8 +795,8 @@
     },
     {
         "id" : 73, 
-        "subject" : "Uranus", 
-        "Question" : "How many rings does Uranus have?",
+        "subject" : "uranus", 
+        "Question" : "How many rings does uranus have?",
         "answerOptions" : [
             {"choice" : "11" , "isCorrect" : false },
             {"choice" : "13" , "isCorrect" : true },
@@ -806,8 +806,8 @@
     },
     {
         "id" : 74, 
-        "subject" : "Uranus", 
-        "Question" : "How many years of nighttime does Uranus experience in the winter?",
+        "subject" : "uranus", 
+        "Question" : "How many years of nighttime does uranus experience in the winter?",
         "answerOptions" : [
             {"choice" : "21", "isCorrect" : true },
             {"choice" : "10" , "isCorrect" : false },
@@ -817,19 +817,19 @@
     },
     {
         "id" : 75, 
-        "subject" : "Uranus", 
-        "Question" : "Which Greek God is Uranus named after?",
+        "subject" : "uranus", 
+        "Question" : "Which Greek God is uranus named after?",
         "answerOptions" : [
             {"choice" : "Humanus", "isCorrect" : false },
-            {"choice" : "Uranus", "isCorrect" : true },
+            {"choice" : "uranus", "isCorrect" : true },
             {"choice" : "Demeter", "isCorrect" : false },
             {"choice" : "Hestia", "isCorrect" : false }
         ]
     },
     {
         "id" : 76, 
-        "subject" : "Uranus", 
-        "Question" : "What year was Uranus discovered?",
+        "subject" : "uranus", 
+        "Question" : "What year was uranus discovered?",
         "answerOptions" : [
             {"choice" : "1781", "isCorrect" : true },
             {"choice" : "1920", "isCorrect" : false },
@@ -839,8 +839,8 @@
     },
     {
         "id" : 77, 
-        "subject" : "Uranus", 
-        "Question" :"What is the degree of Uranus' axial tilt?" ,
+        "subject" : "uranus", 
+        "Question" :"What is the degree of uranus' axial tilt?" ,
         "answerOptions" : [
             {"choice" :"58", "isCorrect" : false },
             {"choice" : "0", "isCorrect" : false },
@@ -850,8 +850,8 @@
     },
     {
         "id" : 78, 
-        "subject" : "Uranus", 
-        "Question" : "Uranus' fancy blue-green color comes mainly from which gas?",
+        "subject" : "uranus", 
+        "Question" : "uranus' fancy blue-green color comes mainly from which gas?",
         "answerOptions" : [
             {"choice" : "Ethanol", "isCorrect" : false },
             {"choice" : "Methane", "isCorrect" : true},
@@ -861,8 +861,8 @@
     },
     {
         "id" : 79, 
-        "subject" : "Uranus", 
-        "Question" : "Which of Uranus' moons is the only moon to rotate retrograde (rotate opposite direction of the planet)?",
+        "subject" : "uranus", 
+        "Question" : "Which of uranus' moons is the only moon to rotate retrograde (rotate opposite direction of the planet)?",
         "answerOptions" : [
             {"choice" : "Trinicutio", "isCorrect" : false },
             {"choice" : "Prospero", "isCorrect" : false },
@@ -872,8 +872,8 @@
     },
     {
         "id" : 80, 
-        "subject" : "Uranus", 
-        "Question" : "The 27 moons of Uranus are named after characters' of which famous writer?",
+        "subject" : "uranus", 
+        "Question" : "The 27 moons of uranus are named after characters' of which famous writer?",
         "answerOptions" : [
             {"choice" : "Dickens", "isCorrect" : false },
             {"choice" : "Tolkien", "isCorrect" : false },
@@ -883,8 +883,8 @@
     },
     {
         "id" : 82, 
-        "subject" : "Neptune", 
-        "Question" : "How long is Neptune's revolution period?",
+        "subject" : "neptune", 
+        "Question" : "How long is neptune's revolution period?",
         "answerOptions" : [
             {"choice" : "165 years", "isCorrect" : true },
             {"choice" :  "100 years", "isCorrect" : false },
@@ -894,8 +894,8 @@
     },
     {
         "id" : 83, 
-        "subject" : "Neptune", 
-        "Question" : "How fast are the winds on Neptune(in mph)?",
+        "subject" : "neptune", 
+        "Question" : "How fast are the winds on neptune(in mph)?",
         "answerOptions" : [
             {"choice" : "400" , "isCorrect" : false },
             {"choice" : "350", "isCorrect" : false },
@@ -905,8 +905,8 @@
     },
     {
         "id" : 84, 
-        "subject" : "Neptune", 
-        "Question" : "How many rings does Neptune have?" ,
+        "subject" : "neptune", 
+        "Question" : "How many rings does neptune have?" ,
         "answerOptions" : [
             {"choice" : "2", "isCorrect" : false },
             {"choice" : "6" , "isCorrect" : true },
@@ -916,8 +916,8 @@
     },
     {
         "id" : 85, 
-        "subject" : "Neptune", 
-        "Question" : "What year did Neptune complete it's first revolution, after being discovered?",
+        "subject" : "neptune", 
+        "Question" : "What year did neptune complete it's first revolution, after being discovered?",
         "answerOptions" : [
             {"choice" : "2000", "isCorrect" : false },
             {"choice" : "2021" , "isCorrect" : false },
@@ -927,8 +927,8 @@
     },
     {
         "id" : 86, 
-        "subject" : "Neptune", 
-        "Question" : "Which of Neptune's moons orbits in the opposite direction?",
+        "subject" : "neptune", 
+        "Question" : "Which of neptune's moons orbits in the opposite direction?",
         "answerOptions" : [
             {"choice" : "Triton" , "isCorrect" : true },
             {"choice" : "Despina", "isCorrect" : false },
@@ -938,8 +938,8 @@
     },
     {
         "id" : 87, 
-        "subject" : "Neptune", 
-        "Question" : "Storms so violent they appear on Neptune's cloud-surface get dubbed:",
+        "subject" : "neptune", 
+        "Question" : "Storms so violent they appear on neptune's cloud-surface get dubbed:",
         "answerOptions" : [
             {"choice" : "Great White Storm", "isCorrect" : false },
             {"choice" : "Great Red Spot", "isCorrect" : false },
@@ -949,8 +949,8 @@
     },
     {
         "id" : 88, 
-        "subject" : "Neptune", 
-        "Question" : "Neptune is so big it's gravitational pull affects which astronomical figure?",
+        "subject" : "neptune", 
+        "Question" : "neptune is so big it's gravitational pull affects which astronomical figure?",
         "answerOptions" : [
             {"choice" : "Astroid Belt", "isCorrect" : false },
             {"choice" : "Kuiper Belt", "isCorrect" : true},
@@ -960,8 +960,8 @@
     },
     {
         "id" : 89, 
-        "subject" : "Neptune", 
-        "Question" : "Despite being the farthest planet away from the Sun, Neptune can reach temperatures how high (in Fahrenheit)?",
+        "subject" : "neptune", 
+        "Question" : "Despite being the farthest planet away from the sun, neptune can reach temperatures how high (in Fahrenheit)?",
         "answerOptions" : [
             {"choice" : "90", "isCorrect" : false },
             {"choice" : "890" , "isCorrect" : true },
@@ -971,8 +971,8 @@
     },
     {
         "id" : 90, 
-        "subject" : "Neptune", 
-        "Question" : "Which of Neptune's moons is one of the two moons to contain an atmosphere?",
+        "subject" : "neptune", 
+        "Question" : "Which of neptune's moons is one of the two moons to contain an atmosphere?",
         "answerOptions" : [
             {"choice" : "Triton", "isCorrect" : true },
             {"choice" : "Nereid", "isCorrect" :false },
@@ -982,7 +982,7 @@
     },
     {
         "id" : 91, 
-        "subject" : "Solar System", 
+        "subject" : "general", 
         "Question" : "How many planets are in our Solar System?",
         "answerOptions" : [
             {"choice" : "9", "isCorrect" : false },
@@ -993,7 +993,7 @@
     },
     {
         "id" : 92, 
-        "subject" : "Solar System", 
+        "subject" : "general", 
         "Question" : "How many planets in our Solar System have rings?",
         "answerOptions" : [
             {"choice" : "2", "isCorrect" : false },
@@ -1004,7 +1004,7 @@
     },
     {
         "id" : 93, 
-        "subject" : "Solar System", 
+        "subject" : "general", 
         "Question" : "What is the name of the spacecraft that has left our Solar System?" ,
         "answerOptions" : [
             {"choice" : "Voyager 1", "isCorrect" : true },
@@ -1015,7 +1015,7 @@
     },
     {
         "id" : 94, 
-        "subject" : "Solar System", 
+        "subject" : "general", 
         "Question" : "The Milky Way is what kind of galaxy?",
         "answerOptions" : [
             {"choice" : "Elliptical", "isCorrect" : false },
@@ -1026,7 +1026,7 @@
     },
     {
         "id" : 95, 
-        "subject" : "Solar System", 
+        "subject" : "general", 
         "Question" : "How fast is the Milky Way Galaxy flying through space (in miles)?",
         "answerOptions" : [
             {"choice" : "515,000", "isCorrect" : true },
@@ -1037,57 +1037,57 @@
     },
     {
         "id" : 96, 
-        "subject" : "Solar System", 
+        "subject" : "general", 
         "Question" : "Hottest planet in the Solar System?",
         "answerOptions" : [
-            {"choice" : "Venus", "isCorrect" : true },
-            {"choice" : "Mercury", "isCorrect" : false },
-            {"choice" : "Mars", "isCorrect" : false },
-            {"choice" : "Earth", "isCorrect" : false }
+            {"choice" : "venus", "isCorrect" : true },
+            {"choice" : "mercury", "isCorrect" : false },
+            {"choice" : "mars", "isCorrect" : false },
+            {"choice" : "earth", "isCorrect" : false }
         ]
     },
     {
         "id" : 97, 
-        "subject" : "Solar System", 
+        "subject" : "general", 
         "Question" : "Which was the first planet discovered by telescope?",
         "answerOptions" : [
-            {"choice" : "Saturn", "isCorrect" : false },
-            {"choice" : "Mars", "isCorrect" : false },
-            {"choice" : "Uranus", "isCorrect" : true },
-            {"choice" : "Neptune", "isCorrect" : false }
+            {"choice" : "saturn", "isCorrect" : false },
+            {"choice" : "mars", "isCorrect" : false },
+            {"choice" : "uranus", "isCorrect" : true },
+            {"choice" : "neptune", "isCorrect" : false }
         ]
     },
     {
         "id" : 98, 
-        "subject" : "Solar System", 
+        "subject" : "general", 
         "Question" : "Which planet has the most eccentric orbit?",
         "answerOptions" : [
-            {"choice" : "Mercury", "isCorrect" : true },
-            {"choice" : "Saturn", "isCorrect" : false },
-            {"choice" : "Uranus", "isCorrect" : false },
-            {"choice" : "Neptune", "isCorrect" : false }
+            {"choice" : "mercury", "isCorrect" : true },
+            {"choice" : "saturn", "isCorrect" : false },
+            {"choice" : "uranus", "isCorrect" : false },
+            {"choice" : "neptune", "isCorrect" : false }
         ]
     },
     {
         "id" : 99, 
-        "subject" : "Solar System", 
+        "subject" : "general", 
         "Question" : "What is the smallest planet in our Solar System?",
         "answerOptions" : [
-            {"choice" : "Earth", "isCorrect" : false },
-            {"choice" : "Mercury", "isCorrect" : true },
-            {"choice" : "Venus", "isCorrect" : false },
-            {"choice" : "Mars", "isCorrect" : false }
+            {"choice" : "earth", "isCorrect" : false },
+            {"choice" : "mercury", "isCorrect" : true },
+            {"choice" : "venus", "isCorrect" : false },
+            {"choice" : "mars", "isCorrect" : false }
         ]
     },
     {
         "id" : 100, 
-        "subject" : "Solar System", 
+        "subject" : "general", 
         "Question" : "Which planet has the highest density?",
         "answerOptions" : [
-            {"choice" : "Neptune", "isCorrect" : false },
-            {"choice" : "Earth" , "isCorrect" : true },
-            {"choice" : "Jupiter", "isCorrect" : false },
-            {"choice" : "Mercury", "isCorrect" : false }
+            {"choice" : "neptune", "isCorrect" : false },
+            {"choice" : "earth" , "isCorrect" : true },
+            {"choice" : "jupiter", "isCorrect" : false },
+            {"choice" : "mercury", "isCorrect" : false }
         ]
     }
-]
+  ]
