@@ -13,10 +13,10 @@ function QuizInfo(props: any) {
   }, []);
 
   const [data, setData] = useState<any[]>([])
-
-  const getData = () => {
-    fetch('quiz.json'
+  const getData = async() => {
+    await fetch('/Quiz'
       , {
+        method: 'GET',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'

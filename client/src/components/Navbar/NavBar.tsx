@@ -44,19 +44,15 @@ function NavBar() {
           open={Boolean(planetDropDown)}
           onClose={() => setPlanetDropDown(null)}
         >
-          <MenuItem>Jupiter</MenuItem>
-          <MenuItem
-            onClick={() => {
-              setModalContent(<PlanetsInfo name={'Earth'}/>);
-              setShowModal(true);
-            }}
-          >Earth</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<PlanetsInfo name = {'Jupiter'}/>);setShowModal(true);}}>Jupiter</MenuItem>
+          <MenuItem onClick={() => {setModalContent(<PlanetsInfo name={'Earth'}/>);setShowModal(true);}}>Earth</MenuItem>
           <MenuItem onClick={() => {setModalContent(<PlanetsInfo name = {'Mars'}/>);setShowModal(true);}}>Mars</MenuItem>
           <MenuItem onClick={() => {setModalContent(<PlanetsInfo name = {'Neptune'}/>);setShowModal(true);}}>Neptune</MenuItem>
           <MenuItem onClick={() => {setModalContent(<PlanetsInfo name = {'Venus'}/>);setShowModal(true);}}>Venus </MenuItem>
-          <MenuItem>Mercury </MenuItem>
-          <MenuItem>Saturn </MenuItem>
-          <MenuItem>Uranus </MenuItem>
+          <MenuItem onClick={() => {setModalContent(<PlanetsInfo name = {'Mercury'}/>);setShowModal(true);}}>Mercury </MenuItem>
+          <MenuItem onClick={() => {setModalContent(<PlanetsInfo name = {'Saturn'}/>);setShowModal(true);}}>Saturn </MenuItem>
+          <MenuItem onClick={() => {setModalContent(<PlanetsInfo name = {'Uranus'}/>);setShowModal(true);}}>Uranus </MenuItem>
+          <MenuItem onClick={() => {setModalContent(<PlanetsInfo name = {'Sun'}/>);setShowModal(true);}}> Sun </MenuItem>
         </Menu>
         <Typography
           variant="h6"
@@ -87,9 +83,6 @@ function NavBar() {
           <MenuItem onClick={() => {setModalContent(<QuizInfo  quizName = {'General'}/>);setShowModal(true);}}>General Quiz</MenuItem>
 
         </Menu>
-        <Typography variant="h6" noWrap>
-          <div className="compare" onClick={() => {setModalContent(<Compare/>);setShowModal(true);}} >Compare</div>
-        </Typography>
       </Toolbar>
       <Modal open={showModal}>
         <div>
