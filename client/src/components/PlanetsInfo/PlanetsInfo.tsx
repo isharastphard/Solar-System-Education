@@ -35,7 +35,7 @@ function PlanetsInfo(props: any) {
     getStory();
   }, []);
 
-  const splitParagraph = (text: string) :string[] => {
+  const splitParagraph = (text: string): string[] => {
     const sentences = text.split(".");
     const paragraphs = [];
 
@@ -60,7 +60,12 @@ function PlanetsInfo(props: any) {
             <div>
               {props.name}'s info:
               <br></br>
-              {splitParagraph(planetStory.info).map((paragraph:string) => <p style={{paddingLeft:'10%', paddingRight:'10%' }}> {paragraph}</p>)}
+              {splitParagraph(planetStory.info).map((paragraph: string) => (
+                <p style={{ paddingLeft: "10%", paddingRight: "10%" }}>
+                  {" "}
+                  {paragraph}
+                </p>
+              ))}
               <br></br>
             </div>
           </>

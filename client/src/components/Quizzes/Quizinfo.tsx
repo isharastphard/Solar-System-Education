@@ -59,7 +59,6 @@ function QuizInfo(props: any) {
     next = false;
   };
 
-  
   if (data.length === 0) {
     return null;
   } else {
@@ -111,7 +110,7 @@ function QuizInfo(props: any) {
                           answerOptions.choice === chosenAnswer
                             ? "whitesmoke"
                             : "silver",
-                          margin: "10px"
+                        margin: "10px",
                       }}
                     >
                       {" "}
