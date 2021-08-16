@@ -26,8 +26,8 @@ Hot reloading is enabled so the react app will auto reload when files are saved.
 
 ## Backend
 
-TBD
+Contains the app.py file, the jsons needed for the database and the requirement files.
 
 ## File Structure
 
-TBD
+Project is split into frontend and backend. The frontend folder is called "client" and the backend folder is called "api". the client folder is split into several folders of its own, the yarn folders, the node mudles, the source folder (which has a majority of the meat of the project in it) and the public folder which contains favicon and other css files. 

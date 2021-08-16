@@ -14,6 +14,7 @@ import "./../../assets/ModalStyle.css";
 import QuizInfo from "components/Quizzes/Quizinfo";
 import ClickHere from "components/ClickHere/clickHere";
 
+
 function NavBar() {
   const [modalContent, setModalContent] = useState(
     <React.Fragment></React.Fragment>
