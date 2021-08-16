@@ -12,7 +12,9 @@ import {
 import PlanetsInfo from "components/PlanetsInfo/PlanetsInfo";
 import "./../../assets/ModalStyle.css";
 import QuizInfo from "components/Quizzes/Quizinfo";
-import Compare from "components/Compare/Compare";
+import ClickHere from "components/ClickHere/clickHere";
+
+
 function NavBar() {
   const [modalContent, setModalContent] = useState(
     <React.Fragment></React.Fragment>
@@ -28,6 +30,17 @@ function NavBar() {
         <Typography variant="h4" noWrap>
           <div className="title">Solar System</div>
         </Typography>
+        <Typography variant="h6" noWrap>
+          <div
+            className="help"
+            onClick={() => {
+              setModalContent(<ClickHere />);
+              setShowModal(true);
+            }}
+          >
+            CLICK HERE!
+          </div>
+        </Typography>
         <Typography
           variant="h6"
           noWrap
@@ -35,8 +48,9 @@ function NavBar() {
             setPlanetDropDown(e.currentTarget);
           }}
         >
-          <div className="planets">Planets</div>
+          <div className="planets">System-Info</div>
         </Typography>
+
         <Menu
           anchorEl={planetDropDown}
           id="planets-menu"

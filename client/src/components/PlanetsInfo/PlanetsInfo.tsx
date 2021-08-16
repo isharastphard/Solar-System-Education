@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Button, Grid } from "@material-ui/core";
 
 function PlanetsInfo(props: any) {
   const [data, setData] = useState<any[]>([]);
@@ -53,7 +54,7 @@ function PlanetsInfo(props: any) {
   return (
     <div style={{ color: "#fec604" }}>
       <h2>This is {props.name}</h2>
-      <div>
+      <div style={{ overflowY: "scroll", height: "350px" }}>
         {story.map((planetStory: any) => (
           <>
             {" "}
@@ -77,17 +78,21 @@ function PlanetsInfo(props: any) {
         {data.map((item: any) => (
           <>
             {" "}
-            <div>
-              {props.name}'s density: {item.density}
+            <Grid justifyContent="center">
+              {props.name}'s Density: {item.density}
               <br></br>
-              {props.name}'s gravity: {item.gravity}
+              {props.name}'s Gravity: {item.gravity}
               <br></br>
               {props.name !== "Earth" && (
                 <div>
                   Discovered by: {item.discoveredBy} on {item.discoveryDate}
                 </div>
               )}
-            </div>
+              {props.name}'s Mean Radius: {item.meanRadius}
+              <br></br>
+              {props.name}'s Mass: {item.mass.massValue} (Exponent{" "}
+              {item.mass.massExponent})
+            </Grid>
           </>
         ))}{" "}
       </div>
