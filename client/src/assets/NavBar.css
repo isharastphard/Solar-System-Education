@@ -6,7 +6,10 @@
     padding-left: 2em;
     font-family: monospace;
 }
-
+.help{
+    padding-left: 2em;
+    font-family: monospace;
+}
 .quiz{
     padding-left: 2em;
     font-family: monospace;
